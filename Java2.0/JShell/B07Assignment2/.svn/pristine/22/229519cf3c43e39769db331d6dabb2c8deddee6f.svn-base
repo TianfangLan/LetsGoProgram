@@ -1,0 +1,9 @@
+package jshell.jshellloop;
+
+public class Spliter {
+	
+	
+	public String[] separateCommand(String input) {
+		return input.split(" ");
+	}
+}

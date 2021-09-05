@@ -1,0 +1,23 @@
+package jshell.jshellcore;
+
+import jshell.files.FileSystem;
+
+public class Mkdir implements Command{
+
+  @Override
+  public void excute(String input) {
+    // TODO Auto-generated method stub
+    String[] paths = input.split("\\s+");
+    for(String path : paths) {
+        FileSystem.getSystem().makeDir(path);
+    }
+
+  }
+
+  @Override
+  public String getDoc() {
+    // TODO Auto-generated method stub
+    return "Command mkdir<br> to create directories";
+  }
+
+}

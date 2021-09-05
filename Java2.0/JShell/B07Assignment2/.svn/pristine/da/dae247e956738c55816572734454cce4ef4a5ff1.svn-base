@@ -1,0 +1,33 @@
+package jshell.jshellcore;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Mapper {
+	
+	private Map<String, Command> map;
+	
+	private static final Mapper instance = new Mapper();
+	
+	private Mapper() {
+		map = new HashMap<String, Command>();
+		init();
+	}
+	
+	private void init() {
+		map.put("exit", new Exit());
+	}
+	
+	public boolean isExist(String key) {
+		return map.get(key) != null;
+	}
+	
+	public Command getCommand(String key) {
+		return map.get(key);
+	}
+	
+	public static Mapper getMapper() {
+		return instance;
+	}
+	
+}

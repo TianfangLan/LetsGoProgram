@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+    - finished the mv command
+    - added new method to filesystem and directory.java
+What do I plan to work in the next three days?
+    - finished the get command
+    - change the cat command
+
+Am I blocked on anything?
+    - how to use url in java.

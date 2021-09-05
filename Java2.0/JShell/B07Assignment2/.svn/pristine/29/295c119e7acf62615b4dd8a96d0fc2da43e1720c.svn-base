@@ -1,0 +1,7 @@
+Class name: History
+
+Responsibilities:
+* Print out the recent command
+
+Collaborators:
+Command

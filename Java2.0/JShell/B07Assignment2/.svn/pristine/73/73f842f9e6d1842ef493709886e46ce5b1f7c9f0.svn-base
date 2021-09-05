@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+	- Working on cp command
+	- Working on tree command
+
+What do I plan to work in the next three days?
+	- Finish cp and tree command
+
+Am I blocked on anything?
+	- Consider to create a ArgParse class that can parse the input

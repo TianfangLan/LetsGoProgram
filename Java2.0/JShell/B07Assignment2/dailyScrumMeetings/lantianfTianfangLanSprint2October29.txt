@@ -1,0 +1,8 @@
+What did I work on in the last three days?
+    - think of how to implement commands
+What do I plan to work in the next three days?
+    - finish the base code for the my commands.
+
+
+Am I blocked on anything?
+    - //

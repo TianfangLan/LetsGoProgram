@@ -1,0 +1,30 @@
+1
+impossible
+2
+stack
+stack put(B) move(A) put(N) move(A) put(N) move(A) get() get() get()
+3
+bucket queue stack
+bucket move(B) put(A) move(N) move(A) get() put(N) move(A) get()
+queue move(B) put(A) move(N) put(A) put(N) move(A) get() get() get()
+stack move(B) put(A) move(N) get() move(A) put(N) put(A) get() get()
+4
+queue 
+queue put(B) put(A) move(N) get() put(A) move(N) move(A) get() get()
+5
+stack
+stack put(B) put(A) move(N) put(A) move(N) move(A) get() get() get()
+6
+queue
+queue put(B) put(A) move(N) put(A) move(N) get() move(A) get() get()
+7
+queue stack bucket
+queue put(B) move(A) move(N) move(A) move(N) move(A) get()
+stack put(B) put(A) put(N) move(A) move(N) move(A) get() get() get()
+bucket put(B) move(A) move(N) move(A) move(N) move(A) get()
+8
+queue stack
+queue put(B) put(A) move(N) move(A) get() get() move(N) move(A)
+stack put(B) put(A) move(N) get() get() move(A) move(N) move(A)
+9
+impossible

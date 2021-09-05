@@ -1,0 +1,45 @@
+package jshell.jshellcore.command;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import jshell.jshellcore.Command;
+import jshell.jshellcore.Mapper;
+import jshell.jshellcore.Output;
+
+public class Save implements Command{
+	
+  /** output is the output object store output */
+  private Output output = new Output();
+
+  @Override
+  public void excute(String input) {
+    // TODO Auto-generated method stub
+    try (PrintWriter out = new PrintWriter("save.txt")) {
+      History hist = (History)(Mapper.getMapper().getCommand("history"));
+      Object List = hist.toString(); 
+      out.println(List);
+      out.close();
+    } catch (FileNotFoundException e) {
+    // TODO Auto-generated catch block
+    e.printStackTrace();
+  }
+  }
+
+  @Override
+  public String getDoc() {
+    // TODO Auto-generated method stub
+    return "Command save <filename> to save the current session of JShell to "
+        + "the <filename>";
+  }
+
+  /**
+   * the class will return the object output.
+   * 
+   * @return object output contains the output of the class.
+   */
+  @Override
+  public String getOutput() {
+    return output.GetOutput();
+  }
+
+}

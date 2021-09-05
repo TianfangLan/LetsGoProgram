@@ -1,0 +1,52 @@
+package jshell.jshellcore;
+
+
+import jshell.exceptions.NotExistException;
+import jshell.files.File;
+import jshell.files.FileSystem;
+/***
+ * the class Cat can read the file at the input path
+ * and display the content. 
+ * 
+ * @author lan tianfang
+ *
+ */
+public class Cat implements Command{
+	private Input input = new Input();
+	private Output output = new Output();
+	@Override
+	public void excute(String arg) {
+	    // store the input into a input object.
+		this.input.SetInputContent(arg);
+		// split the path
+		String[] paths = arg.split("\\s+");
+		for (String path :paths) {
+		    // try to get the file at the path
+			try {
+			    // test whether the path exist
+				FileSystem.getSystem().exist(path);
+				// get the at path and store it in a object
+				File file = FileSystem.getSystem().getFile(path);
+				// get the content in the file
+				String content = file.getContent();
+				// store the content into output
+				this.output.SetOutputContent(content);
+				System.out.println(content);
+			}
+			// when it causes error
+			catch(NotExistException e) {
+				System.err.println("cat: "+e.getMessage());
+			}
+			System.out.println("\n\n");
+		}
+	}
+
+	@Override
+	public String getDoc() {
+		return "Display the content of the file at the input path";
+	}
+	public Output getOutput() {
+		return output;
+	}
+
+}

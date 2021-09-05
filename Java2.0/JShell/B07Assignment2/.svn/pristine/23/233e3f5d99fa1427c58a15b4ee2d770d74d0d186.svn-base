@@ -1,0 +1,25 @@
+Nov 13 - Nov 18
+
+User Stories from Product Backlog that we will address in this sprint:
+a) As a user, I need to redirect the output to a file
+b) As a user, I want to copy files
+c) As a user, I want to move files
+d) As a user, I want to save the status of the filesystem
+
+Specific tasks to be accomplished:
+a-1. (Redirection) create redirection system
+b-1. (cp) create the cp command
+c-1. (mv) create the mv command
+d-1. (save) create the save command
+
+User: Xianghu Dai
+Tasks: a-1
+
+User: Junxing Xu
+Tasks: b-1
+
+User: Tianfang Lan
+Tasks: c-1
+
+User: Jiahong Wang
+Tasks: d-1

@@ -1,0 +1,10 @@
+Class name: Pushd
+
+Responsibilities:
+* Excute the class Pushd will push the working directory onto directory stack
+* and change the current working directory to the input directory.
+ 
+Collaborators:
+*Command
+*FileSystem
+*NotExistException

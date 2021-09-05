@@ -1,0 +1,9 @@
+Class name: Popd
+
+Responsibilities:
+* Excute the class will remove the top entry from the directory
+* stack and get into the directory.
+
+Collaborators:
+*Command
+*FileSystem

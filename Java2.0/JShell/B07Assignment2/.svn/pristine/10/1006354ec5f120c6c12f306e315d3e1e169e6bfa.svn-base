@@ -1,0 +1,37 @@
+package jshell.jshellcore;
+
+/***
+ * the class will return the documentation of the input
+ * @author lan erbao
+ *
+ */
+public class Man implements Command{
+
+  /**
+   * the method excut will return the documenatation if the input is a formal
+   * commmand, otherwise it will thorw a error.
+   * 
+   * @param command is a name of the command in the form of string
+   */
+  @Override
+  public void excute(String command) {
+    // if the input commmand is a formal command
+    if (Mapper.getMapper().isExist(command)) {
+       System.out.println(Mapper.getMapper().getCommand(command).getDoc()); 
+    }
+    // if the input is not a commmand thorw the error.
+    else {
+    	System.err.println("man: " + command+": command does not exist");
+    }
+  }
+ 
+  /**
+   * getDoc is suppose to get the documentation of the class
+   */
+  @Override
+  public String getDoc() {
+    return "man method will return the documentation of the input command";
+  }
+  
+
+}

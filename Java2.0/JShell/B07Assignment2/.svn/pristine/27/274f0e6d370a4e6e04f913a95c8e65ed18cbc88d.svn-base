@@ -1,0 +1,13 @@
+Class name: FileSystem
+
+Responsibilities:
+* A virtual environment to store directories and files
+
+Collaborators:
+*Cat
+*Cd
+*Echo
+*Ls
+*Mkdir
+*Pushd
+*Pwd

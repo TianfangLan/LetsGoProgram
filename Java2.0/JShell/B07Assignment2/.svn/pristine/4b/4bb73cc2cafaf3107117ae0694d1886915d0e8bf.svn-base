@@ -1,0 +1,22 @@
+package jshell.files;
+
+/**
+ * A FileNode is a kind of node in the FileSystem tree, it
+ * inherits {@link Node} since it is also a node. However,
+ * the main difference is, FileNode class has no children
+ * since it is a file but not a directory/
+ * @author danielxu
+ *
+ */
+public class FileNode extends Node{
+
+	public FileNode(String name, DirectoryNode parent) {
+		super(name, parent);
+	}
+	
+	@Override
+	public boolean isFile() {
+		return true;
+	}
+
+}

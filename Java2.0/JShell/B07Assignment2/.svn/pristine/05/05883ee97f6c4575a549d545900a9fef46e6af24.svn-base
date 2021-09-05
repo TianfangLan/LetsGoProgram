@@ -1,0 +1,38 @@
+package jshell.jshellcore;
+
+
+import jshell.exceptions.NotExistException;
+import jshell.files.File;
+import jshell.files.FileSystem;
+
+public class Cat implements Command{
+	private Input input = new Input();
+	private Output output = new Output();
+	@Override
+	public void excute(String arg) {
+		this.input.SetInputContent(arg);
+		String[] paths = arg.split("\\s+");
+		for (String path :paths) {
+			try {
+				FileSystem.getSystem().exist(path);
+				File file = FileSystem.getSystem().getFile(path);
+				String content = file.getContent();
+				this.output.SetOutputContent(content);
+				System.out.println(content);
+			}
+			catch(NotExistException e) {
+				System.err.println("cat: "+e.getMessage());
+			}
+			System.out.println("\n\n");
+		}
+	}
+
+	@Override
+	public String getDoc() {
+		return "Display the content of the file at the input path";
+	}
+	public Output getOutput() {
+		return output;
+	}
+
+}

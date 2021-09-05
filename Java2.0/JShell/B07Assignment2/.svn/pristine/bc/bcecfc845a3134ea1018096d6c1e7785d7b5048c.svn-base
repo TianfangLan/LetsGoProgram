@@ -1,0 +1,6 @@
+Class name: Recorder
+
+Responsibilities:
+*Record the status of the command(success or error)
+
+Collaborators:

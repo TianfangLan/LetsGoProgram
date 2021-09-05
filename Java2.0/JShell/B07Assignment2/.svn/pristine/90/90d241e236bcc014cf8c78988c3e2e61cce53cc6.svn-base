@@ -1,0 +1,6 @@
+package jshell.jshellloop;
+
+public interface Command {
+  // every command will excute and return nothing
+  public void excute(String input);
+}

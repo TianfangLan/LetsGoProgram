@@ -1,0 +1,32 @@
+package jshell.jshellcore;
+
+
+import jshell.files.File;
+import jshell.files.FileSystem;
+
+public class Cat implements Command{
+	private Input input = new Input();
+	private Output output = new Output();
+	@Override
+	public void excute(String arg) {
+		this.input.SetInputContent(arg);
+		String[] paths = arg.split("\\s+");
+		// TODO think about wrong pass after sprint2
+		for (String path :paths) {
+			FileSystem.getSystem().exist(path);
+			File file = FileSystem.getSystem().getFile(path);
+			String content = file.getContent();
+			this.output.SetOutputContent(content);
+			System.out.print(content);
+		}
+	}
+
+	@Override
+	public String getDoc() {
+		return "Display the content of the file at the input path";
+	}
+	public Output getOutput() {
+		return output;
+	}
+
+}

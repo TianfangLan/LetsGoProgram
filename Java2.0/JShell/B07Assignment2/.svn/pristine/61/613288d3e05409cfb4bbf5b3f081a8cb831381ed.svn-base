@@ -1,0 +1,55 @@
+package test.jshell.files;
+
+import jshell.files.File;
+import java.util.ArrayList;
+import jshell.files.Path;
+
+/**
+ * this class is used to test the {@link File}
+ * test the mutate methods in the class.
+ * @author lan erbao
+ *
+ */
+public class FileText {
+  void test() {
+    Path path = new Path("AA");
+    // make the test on returning content for the file.
+    File file1 = new File(path, "asdfsdff");
+    assertEquals(file.getContent(), "asdfsdff");
+
+    // make test for empty string
+    File file2 = new File(path, "");
+    assertEquals(file2.getContent(), "");
+    
+    // make test on several lines.
+    File file3 = new File(path, "sdfsdf\nfdsf\nfsdf\nggeij");
+    assertEquals(file2.getContent(), "sdfsdf\nfdsf\nfsdf\nggeij");
+    
+    // make test on overWrite with simple example
+    file1.overWrite("bb");
+    assertEquals(file1.getContent(), "aa");
+    
+    // make test on overWrite with empty string
+    file1.overWrite("");
+    assertEquals(file1.getContent(), "");
+    
+    // make test on overWrite string with several lines.
+    file1.overWrite("sdfsdf\nfdsf\nfsdf\nggeij");
+    assertEquals(file1.getContent(), "sdfsdf\nfdsf\nfsdf\nggeij");
+    
+    // make test on append with simple string.
+    file1.append("ab");
+    assertEquals(file1.getContent(), "sdfsdf\nfdsf\nfsdf\nggeijab");
+    
+    // make test on append string with several lines
+    file2.append("AB");
+    file2.append("abc\ncba\nbba");
+    assertEquals(file2.getContent(), "ABabc\ncba\nbba");
+    
+    // make test on append nothing
+    file2.append("");
+    assertEquals(file2.getContent(), "ABabc\ncba\nbba");
+
+  }
+
+}

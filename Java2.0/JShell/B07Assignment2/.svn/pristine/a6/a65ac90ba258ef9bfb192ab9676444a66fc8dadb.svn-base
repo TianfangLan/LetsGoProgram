@@ -1,0 +1,60 @@
+package jshell.jshellcore;
+
+import jshell.exceptions.NotExistException;
+import jshell.files.File;
+import jshell.files.FileSystem;
+
+public class Echo implements Command{
+	private Input input = new Input();
+	private Output output = new Output();
+	@Override
+	public void excute(String arg) {
+		this.input.SetInputContent(arg);
+		try {
+			if (arg.contains(">>")){
+				String[] args = arg.split(">>", 2);
+				String content = args[0].substring(1, args[0].lastIndexOf("\""));
+		        String path = args[1].replaceAll("\\s+", "");
+				if (FileSystem.getSystem().exist(path)) {
+				  File file = FileSystem.getSystem().getFile(path);
+		          file.append(content);
+				}
+				else {
+				  FileSystem.getSystem().makeFile(path);
+				  FileSystem.getSystem().getFile(path).overWrite(content);
+				}
+			}
+			else if(arg.contains(">")) {
+			  String[] args = arg.split(">", 2);
+			  String content = args[0].substring(1, args[0].lastIndexOf("\""));
+			  String path = args[1].replaceAll("\\s+", "");
+	          if (FileSystem.getSystem().exist(path)) {
+	            File file = FileSystem.getSystem().getFile(path);
+	            file.overWrite(content);
+	          }
+	          else {
+	            FileSystem.getSystem().makeFile(path);
+	            FileSystem.getSystem().getFile(path).overWrite(content);
+	          }
+			}
+			else {
+			  System.out.println(arg);
+			}
+		}
+		catch(NotExistException e) {
+			System.err.println("echo: "+e.getMessage());
+		}
+	}
+	@Override
+	public String getDoc() { 
+		return "the method will print the input if there if no path in put"
+		    + ", if > is given the method will create new file at path if"
+		    + "otherwise method will overwirte the file with content at path"
+		    + "if >> is given the method will append instead of overwrite.";
+	}
+	public Output getOutput() {
+	  return output;
+	}
+	
+
+}

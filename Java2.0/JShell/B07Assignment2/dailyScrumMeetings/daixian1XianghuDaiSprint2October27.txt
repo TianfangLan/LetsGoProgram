@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+	- wrote some crc cards
+
+What do I plan to work in the next three days?
+	- finish the crc cards
+	- revise JShellLoop class and its collaborators
+
+Am I blocked on anything?
+	- need Command interface to work on Mapper class

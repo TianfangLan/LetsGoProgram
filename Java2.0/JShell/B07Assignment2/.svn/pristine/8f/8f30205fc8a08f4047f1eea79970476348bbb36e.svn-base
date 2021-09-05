@@ -1,0 +1,40 @@
+package jshell.jshellcore.command;
+
+import jshell.exceptions.InvalidArgException;
+import jshell.exceptions.NotExistException;
+import jshell.files.FileSystem;
+import jshell.jshellcore.Command;
+
+/**
+ * 
+ * Copying from one path to another, without removing the original content
+ * @author danielxu
+ *
+ */
+public class Cp implements Command{
+
+  @Override
+  public void excute(String input) {
+    try {
+      String[] s = input.split("\\s+");
+      FileSystem.getSystem().copy(s[0], s[1]);
+    }
+    catch(InvalidArgException e) {
+      System.err.println("cp: " + e.getMessage());
+    }
+    catch(NotExistException e) {
+      System.err.println("cp: " + e.getMessage());
+    }
+  }
+
+  @Override
+  public String getDoc() {
+    return "Copy contents from OLDPATH to NEWPATH";
+  }
+
+  @Override
+  public String getOutput() {
+    return null;
+  }
+
+}

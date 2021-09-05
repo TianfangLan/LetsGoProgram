@@ -1,0 +1,10 @@
+What did I work on in the last three days?
+	- Thinking the idea of implementing the FileSystem
+	- Wrote some startup codes
+
+What do I plan to work in the next three days?
+	- Finish FileSystem
+	- Implement Directory in tree structure
+
+Am I blocked on anything?
+    - Try to be active and update more codes

@@ -1,0 +1,20 @@
+package jshell.jshellcore;
+
+import jshell.files.FileSystem;
+
+public class Popd implements Command{
+
+  @Override
+  public void excute(String input) {
+    FileSystem.getSystem().pop();
+  }
+
+  @Override
+  public String getDoc() {
+    // TODO Auto-generated method stub
+    return "Remove the top entry from the directory stack, and"
+        + "cd into it.";
+  }
+  
+
+}

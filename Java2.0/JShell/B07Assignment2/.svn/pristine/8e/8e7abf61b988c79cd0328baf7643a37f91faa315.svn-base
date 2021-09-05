@@ -1,0 +1,18 @@
+package jshell.jshellcore;
+
+public class Exit implements Command{
+
+	@Override
+	public void excute(String input) {
+		// TODO Auto-generated method stub
+		// 
+		System.exit(0);
+	}
+
+	@Override
+	public String getDoc() {
+		// TODO Auto-generated method stub
+		return "Command Exit to Quit the program";
+	}
+	
+}

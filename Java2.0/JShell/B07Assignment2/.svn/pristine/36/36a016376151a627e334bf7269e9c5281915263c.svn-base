@@ -1,0 +1,8 @@
+Class name: File
+
+Responsibilities:
+*File contains a content and the content inside can be edit by
+* appending, overwrite and clear.
+
+
+Collaborators:

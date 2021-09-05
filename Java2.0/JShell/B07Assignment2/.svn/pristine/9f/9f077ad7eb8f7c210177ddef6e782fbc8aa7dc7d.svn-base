@@ -1,0 +1,10 @@
+package jshell.jshellcore;
+
+import jshell.files.*;
+
+public class Prompter {
+	
+	public void pirntPrompt() {
+		System.out.print(FileSystem.getSystem().getCur()+"$ ");
+	}
+}

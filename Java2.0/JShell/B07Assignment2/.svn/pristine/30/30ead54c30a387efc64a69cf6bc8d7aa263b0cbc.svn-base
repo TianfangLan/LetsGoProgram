@@ -1,0 +1,57 @@
+// **********************************************************
+// Assignment2:
+// Student4: Xianghu Dai
+// UTORID user_name: daixian1
+// UT Student #: 1004029623
+// Author: Xianghu Dai
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC B07 and understand the consequences.
+// *********************************************************
+package jshell.jshellcore;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Mapper {
+	
+	private Map<String, Command> map;
+	
+	private static final Mapper instance = new Mapper();
+	
+	private Mapper() {
+		map = new HashMap<String, Command>();
+		init();
+	}
+	
+	private void init() {
+		map.put("exit", new Exit());
+		map.put("cat", new Cat());
+		map.put("echo", new Echo());
+		map.put("cd", new Cd());
+		map.put("ls", new Ls());
+		map.put("mkdir", new Mkdir());
+		map.put("pushd", new Pushd());
+		map.put("popd", new Popd());
+		map.put("pwd", new Pwd());
+		map.put("man", new Man());
+		map.put("history", new History());
+	}
+	
+	public boolean isExist(String key) {
+		return map.get(key) != null;
+	}
+	
+	public Command getCommand(String key) {
+		return map.get(key);
+	}
+	
+	public static Mapper getMapper() {
+		return instance;
+	}
+	
+}

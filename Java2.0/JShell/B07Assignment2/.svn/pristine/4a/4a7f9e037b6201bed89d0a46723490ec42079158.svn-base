@@ -1,0 +1,7 @@
+Class name: Prompter
+
+Responsibilities:
+*Print out the current work directory
+*Inform users to type in the command
+
+Collaborators:

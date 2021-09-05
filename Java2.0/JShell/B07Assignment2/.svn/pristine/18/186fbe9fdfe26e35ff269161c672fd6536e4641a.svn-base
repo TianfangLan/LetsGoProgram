@@ -1,0 +1,11 @@
+package test.jshell.files;
+
+/**
+ * this class is used to test the {@link File.java}
+ * test the mutate methods in the class.
+ * @author lan erbao
+ *
+ */
+public class FileText {
+
+}

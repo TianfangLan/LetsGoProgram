@@ -1,0 +1,33 @@
+Oct 18 - Oct 23
+
+User Stories from Product Backlog that we will address in this sprint:
+a) As a user, I need to open the JShell
+b) As a user, I need to to Interact with the FileSystem
+c) As a user, I need to run some command
+d) As a user, I need to know the output of the command
+
+Specific tasks to be accomplished:
+a-1. (JShell) Write base codes for JShell to prompt the user for input
+a-2. (JShell) Write base codes for JShell to Parse the input through an intepreter
+a-3. (JShell) Test JShell
+b-1. (FileSystem) create a file system by using an N-Array linked list of String
+b-2. (FileSystem) create FileSystem methods
+b-3. (Directory) Write the base code for the Directory class
+b-4. (File) Write the base code for the File class
+b-5. (FileSystem) test the FileSystem
+c-1. (Command) Create Command interface
+d-1. (Command) Create class CommandStatus
+d-2. (Command) Create class Input
+d-3. (Command) Create class Output
+d-4. (Command) Create class Error
+User: Xianghu Dai
+Tasks: a-1, a-2, a-3
+
+User: Junxing Xu
+Tasks: b-1, b-2, b-3
+
+User: Tianfang Lan
+Tasks: c-1, b-4, b-5
+
+User: Jiahong Wang
+Tasks: d-1, d-2, d-3, d-4

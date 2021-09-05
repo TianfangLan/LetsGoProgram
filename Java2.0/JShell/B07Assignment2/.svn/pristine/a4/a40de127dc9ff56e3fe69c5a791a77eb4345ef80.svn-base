@@ -1,0 +1,22 @@
+package jshell.jshellcore;
+
+public class Spliter {
+	
+	public static String[] commandSplit(String command) {
+		return split(trim(command));
+	}
+	
+	private static String[] split(String command) {
+		String[] s = {"", ""};
+		String[] sp = command.split("\\s+", 2);
+		for(int i=0;i<sp.length;i++) {
+			s[i] = sp[i];
+		}
+		return s;
+	}
+	
+	private static String trim(String command) {
+		return command.replaceAll("^\\s+", "").replaceAll("\\s+$", "");
+	}
+	
+}

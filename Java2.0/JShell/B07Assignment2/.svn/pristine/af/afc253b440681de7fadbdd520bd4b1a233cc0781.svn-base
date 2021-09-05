@@ -1,0 +1,12 @@
+Class name: JShell
+
+Responsibilities:
+*Let users to interact with the filesystem with commands
+
+Collaborators:
+*Mapper
+*Prompter
+*Recorder
+*Spliter
+*Recorder
+*Validator

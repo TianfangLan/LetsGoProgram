@@ -1,0 +1,46 @@
+Backlog item						Estimate
+
+Allow users to open the JShell and			5 days
+run commands
+
+Allow users to exit the program				2 days
+
+Allow users to create directories			2 days
+by using command 'mkdir'
+
+Allow users to change directory				2 days
+by using command 'cd'
+
+Allow users to list all contents			2 days
+in current directory or in the given directory,
+or print the file by using command 'ls'
+
+Allow users to print current working			2 days
+directory by using command 'pwd'
+
+Allow users to push the current working			4 days
+directory into the directory stack and then
+changes to the new working directory by using
+command 'pushd'
+
+Allow users to reomove the top entry			3 days
+from directory stack and cd into it by using
+command 'popd'
+
+Allow users to print out recent commands		3 days
+by using command 'history'
+
+Allow users to display the contents in			2 days
+the files by using command 'cat'
+
+Allow users to print the string on the			2 days
+shell by using command 'echo'
+
+Allow users to print documentation for			2 days
+a command by using command 'man'
+
+Allow users to redirect input by using			4 days
+I/O redirection symbols '>'
+
+Allow users to redirect input by using			2 days
+I/O redirection symbols '>>'

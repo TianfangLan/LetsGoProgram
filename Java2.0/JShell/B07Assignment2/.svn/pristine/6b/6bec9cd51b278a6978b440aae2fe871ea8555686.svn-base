@@ -1,0 +1,55 @@
+// **********************************************************
+// Assignment2:
+// Student3: Jiahong Wang
+// UTORID user_name: wangj398
+// UT Student #: 1002695933
+// Author: Jiahong Wang
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC B07 and understand the consequences.
+// *********************************************************
+package jshell.jshellcore.command;
+
+import jshell.exceptions.NotExistException;
+import jshell.files.FileSystem;
+import jshell.jshellcore.Command;
+
+/***
+ * the class print the contents for the input path
+ * 
+ * @author Jiahong Wang
+ * @param null or the full path or the relative path
+ * @return all the content inside the given path
+ */
+
+public class Ls implements Command {
+
+  @Override
+  public void excute(String input) {
+    // TODO Auto-generated method stub
+    String[] output;
+    try {
+      if (input.equals(" ")) {
+        output = FileSystem.getSystem().list();
+      } else {
+        output = FileSystem.getSystem().list(input);
+      }
+      for (String out : output) {
+        System.out.println(out);
+      }
+    } catch (NotExistException e) {
+      System.err.println("ls: " + e.getMessage());
+    }
+  }
+
+  @Override
+  public String getDoc() {
+    // TODO Auto-generated method stub
+    return "Command ls<path> to print the contents of the given <path>";
+  }
+
+}

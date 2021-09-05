@@ -1,0 +1,27 @@
+Oct 31 - Oct 7
+
+User Stories from Product Backlog that we will address in this sprint:
+a) As a user, I need to run some command
+b) As a user, I want to redirect output and input
+c) As a user, I don`t want JShell crash when I make error
+d) As a user, I don`t want the program have too many bugs
+
+Specific tasks to be accomplished:
+a-1. (Command) create commands that related to filesystem
+a-2. (Command) create commands that not related to filesystem
+b-1. (IORedirection) redirect output and input
+b-2. (Recorder) record the output of each command item
+c-1. (ErrorHandler) handle the error when the choices of commands are incorrect
+d-1. (test) write unittest for the code
+
+User: Xianghu Dai
+Tasks: b-2, d-1
+
+User: Junxing Xu
+Tasks: d-1, C-1
+
+User: Tianfang Lan
+Tasks: a-1, b-1, d-1
+
+User: Jiahong Wang
+Tasks: a-2, b-1, d-1

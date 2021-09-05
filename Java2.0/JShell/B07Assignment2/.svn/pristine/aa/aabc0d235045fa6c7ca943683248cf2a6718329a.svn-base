@@ -1,0 +1,17 @@
+package jshell.jshellcore;
+
+import jshell.files.FileSystem;
+
+public class pwd implements Command{
+
+  @Override
+  public void excute(String arg) {
+    System.out.println(FileSystem.getSystem().getCur());
+  }
+
+  @Override
+  public String getDoc() {
+    return "Print the path of current working directory";
+  }
+
+}

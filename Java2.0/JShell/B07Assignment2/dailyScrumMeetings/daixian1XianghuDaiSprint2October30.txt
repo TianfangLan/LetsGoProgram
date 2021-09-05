@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+	- Finish the Jshell core
+	- Finish the mapper by using hashmap
+
+What do I plan to work in the next three days?
+	- finish the crc cards for all classes
+
+Am I blocked on anything?
+	- 4 midterms this week, don`t have too much time on B07

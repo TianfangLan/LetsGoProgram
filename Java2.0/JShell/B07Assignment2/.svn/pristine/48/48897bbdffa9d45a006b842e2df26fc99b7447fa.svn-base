@@ -1,0 +1,6 @@
+Class neme: Validator
+
+Responsibilities:
+* determine if the command typed by user is validate
+
+Collaborators:

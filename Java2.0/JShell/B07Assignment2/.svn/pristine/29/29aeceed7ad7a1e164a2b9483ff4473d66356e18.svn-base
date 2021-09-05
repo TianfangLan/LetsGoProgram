@@ -1,0 +1,10 @@
+Class name: Path
+
+Responsibilities:
+*A path represents a way to travel from root to a specific node in directory tree
+
+Children:
+*RelativePath
+
+Collaborators:
+*Directory

@@ -1,0 +1,31 @@
+Oct 18 - Oct 23
+
+User Stories from Product Backlog that we will address in this sprint:
+a) As a user, run some command
+b) As a user, I need to to know the path of files and directories
+c) As a user, I need to run some command
+d) As a user, I need to list all files and directories under a directory
+e) As a user, I need to exit the program
+
+Specific tasks to be accomplished:
+a-1. (JShell) Connect the Mapper class with the Command interface
+a-2. (JShell) Connect the JShell class with the Path class 
+a-3. (JShell) Connect the Recorder class with the Input, Output, Commandstatus Classes
+b-1. (FileSystem) Create Path class
+b-2. (FileSystem) Test Path class
+c-1. (Command) Revise Command interface
+d-1. (Ls) List all files and directories under a directory
+d-2. (Ls) test List
+e-1. (Exit) Create class Exit
+
+User: Xianghu Dai
+Tasks: a-1, a-2, a-3
+
+User: Junxing Xu
+Tasks: b-1, b-2
+
+User: Tianfang Lan
+Tasks: d-1, d-2
+
+User: Jiahong Wang
+Tasks: e-1, c-1

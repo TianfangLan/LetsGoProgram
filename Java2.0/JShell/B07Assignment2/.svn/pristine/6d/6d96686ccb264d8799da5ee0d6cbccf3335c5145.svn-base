@@ -1,0 +1,84 @@
+// **********************************************************
+// Assignment2:
+// Student1: Junxing Xu
+// UTORID user_name:xujunxin
+// UT Student #: 1004019028
+// Author: Junxing Xu
+//
+// Student2: Tianfang Lan
+// UTORID user_name: lantianf
+// UT Student #: 1002687210
+// Author: Tianfang Lan
+//
+// Student3:
+// UTORID user_name:
+// UT Student #:
+// Author:
+//
+// Student4:
+// UTORID user_name:
+// UT Student #:
+// Author:
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC B07 and understand the consequences.
+// *********************************************************
+package driver;
+
+import java.util.Scanner;
+
+import jshell.jshellcore.Command;
+import jshell.jshellcore.History;
+import jshell.jshellcore.Mapper;
+import jshell.jshellcore.Prompter;
+import jshell.jshellcore.Recorder;
+import jshell.jshellcore.Spliter;
+
+public class JShell {
+
+  public static void main(String[] args) {
+	  new JShell().run();
+  }
+
+	@SuppressWarnings("unused")
+	private Recorder rc;
+	private Prompter pp;
+	
+	
+	public JShell() {
+		pp = new Prompter();
+		rc = new Recorder();
+	}
+	
+	public void run() {
+		// the program end only when users type "exit" as input
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		while(true) {
+			// print prompt
+			pp.pirntPrompt();
+			// scan the input typed by user	
+			String input = scan.nextLine();
+			// split the input
+			String[] inputList = Spliter.commandSplit(input);
+			String key = inputList[0];
+			String arg = inputList[1];
+			History hist = (History)(Mapper.getMapper().getCommand("history"));
+			hist.add(input);
+			// check if the command is validate
+			if (Mapper.getMapper().isExist(key)) {
+				// map the command and execute it
+				Command c = Mapper.getMapper().getCommand(key);
+				c.excute(arg);
+			}
+			else {
+				System.out.println(input+": command does not exist");
+			}
+		}
+	}
+  
+}

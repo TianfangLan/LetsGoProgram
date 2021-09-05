@@ -1,0 +1,92 @@
+// **********************************************************
+// Assignment2:
+// Student3: Jiahong Wang
+// UTORID user_name: wangj398
+// UT Student #: 1002695933
+// Author: Jiahong Wang
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC B07 and understand the consequences.
+// *********************************************************
+package jshell.jshellcore.command;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import jshell.jshellcore.Command;
+import jshell.jshellcore.Mapper;
+import jshell.jshellcore.Output;
+import jshell.jshellcore.Spliter;
+
+/***
+ * the class print the contents for the input path
+ * 
+ * @author Jiahong Wang
+ * @param the filename
+ * @return null
+ */
+public class Load implements Command {
+  /** output is the output object store output */
+  private Output output = new Output();
+
+  @SuppressWarnings("resource")
+  @Override
+  public void excute(String input) {
+    // TODO Auto-generated method stub
+    if (input.equals("")) {
+      System.err.println("save: No filename arg");
+      return;
+    }
+    String filename = input + ".txt";
+    try {
+      BufferedReader reader = new BufferedReader(new FileReader(filename));
+      String line;
+      String text = reader.readLine();
+      while ((line = reader.readLine()) != null) {
+        text = text + line;
+      }
+      String input_text = text.substring(1, text.length() - 1);
+      String[] list = input_text.split(",");
+      loadCommand(list);
+    } catch (FileNotFoundException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    } catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+  }
+
+  public void loadCommand(String[] input) {
+    for (int index = 0; index < input.length; index++) {
+      String[] inputList = Spliter.commandSplit(input[index]);
+      String key = inputList[0];
+      String arg = inputList[1];
+      if (Mapper.getMapper().isExist(key)) {
+        // map the command and execute it
+        Command c = Mapper.getMapper().getCommand(key);
+        c.excute(arg);
+      }
+    }
+  }
+
+  @Override
+  public String getDoc() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getOutput() {
+    return output.getOutput();
+  }
+
+}

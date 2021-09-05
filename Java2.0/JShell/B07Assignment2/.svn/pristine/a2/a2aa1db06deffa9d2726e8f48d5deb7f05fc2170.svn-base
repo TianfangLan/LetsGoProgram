@@ -1,0 +1,7 @@
+Class name: Exit
+
+Responsibilities:
+* Terminated the program
+
+Collaborators:
+Command

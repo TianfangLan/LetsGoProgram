@@ -1,0 +1,41 @@
+package jshell.jshellcore;
+
+import jshell.exceptions.NotExistException;
+import jshell.files.FileSystem;
+
+/***
+ * the class Pusd will push the working directory onto dierectory stack and
+ * change the new current working directory to the input directory.
+ * 
+ * @author lan tianfang
+ *
+ */
+public class Pushd implements Command{
+
+  /**
+   * the method will push the working directory to the input directory.
+   * 
+   * @param arg is a path in the form of string.
+   */
+  @Override
+  public void excute(String arg) {
+    try {
+    	FileSystem.getSystem().push(arg); 
+    }
+    catch(NotExistException e) {
+    	System.out.println("pushd: "+e.getMessage());
+    }
+  }
+
+ 
+  /**
+   * getDoc is suppose to get the documentation of the class
+   */
+  @Override
+  public String getDoc() {
+    return "Push the working directory onto directory stack"
+        + "and then changes the new current working directory to the"
+        + "input directory";
+  }
+
+}

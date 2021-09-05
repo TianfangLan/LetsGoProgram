@@ -1,0 +1,16 @@
+package jshell.jshellcore;
+
+/***
+ * Every Command should have the excute and getDoc method.
+ * 
+ * @author lan tianfang
+ *
+ */
+public interface Command {
+  // every command will excute and do not return anything.
+  public void excute(String input);
+
+  // every command should getdoc, should return the document of the command
+  public String getDoc();
+
+}

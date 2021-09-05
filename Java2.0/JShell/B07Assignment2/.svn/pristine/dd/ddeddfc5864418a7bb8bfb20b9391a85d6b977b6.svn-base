@@ -1,0 +1,31 @@
+package jshell.jshellloop;
+
+public class Mapper {
+	/*
+	 * Map the input typed by user and execute it
+	 */
+	public void mapCommand(String[] input) {
+		if (input[0].equals("exit")) {
+			
+		}else if (input[0].equals("mkdir")) {
+			
+		}else if (input[0].equals("cd")) {
+			
+		}else if (input[0].equals("ls")) {
+			
+		}else if (input[0].equals("pushd")) {
+			
+		}else if (input[0].equals("popd")) {
+			
+		}else if (input[0].equals("history")) {
+			
+		}else if (input[0].equals("cat")) {
+		
+		}else if (input[0].equals("echo")) {
+			
+		}else if (input[0].equals("man")) {
+			
+		}
+		
+	}
+}

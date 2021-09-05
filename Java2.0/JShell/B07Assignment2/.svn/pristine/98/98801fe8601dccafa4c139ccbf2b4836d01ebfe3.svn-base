@@ -1,0 +1,81 @@
+// **********************************************************
+// Assignment2:
+// Student3: Jiahong Wang
+// UTORID user_name: wangj398
+// UT Student #: 1002695933
+// Author: Jiahong Wang
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC B07 and understand the consequences.
+// *********************************************************
+package jshell.jshellcore.command;
+
+import jshell.exceptions.NotExistException;
+import jshell.files.FileSystem;
+import jshell.files.PathPreprocessor;
+import jshell.jshellcore.Command;
+import jshell.jshellcore.Output;
+
+/***
+ * the class print the contents for the input path
+ * 
+ * @author Jiahong Wang
+ * @param null or the full path or the relative path
+ * @return all the content inside the given path
+ */
+
+public class Ls implements Command {
+
+  /** output is the output object store output */
+  private Output output = new Output();
+
+  @Override
+  public void excute(String input) {
+    try {
+      if(input.equals("")) {
+        print(FileSystem.getSystem().list());
+      }
+      else {
+        String[] args = input.split("\\s+");
+        for(String arg : args) {
+          if(FileSystem.getSystem().isFile(arg)) {
+            print(arg);
+          }
+          else {
+            print(PathPreprocessor.getName(arg)+":");
+            print(FileSystem.getSystem().list(arg));
+            print("");
+          }
+        }
+      }
+    } catch (NotExistException e) {
+      System.err.println("ls: " + e.getMessage());
+    }
+  }
+  
+  private void print(String...msg) {
+    for(String m : msg) {
+      System.out.println(m);
+    }
+  }
+
+  @Override
+  public String getDoc() {
+    return "Command ls<path> to print the contents of the given <path>";
+  }
+
+  /**
+   * the class will return the object output.
+   * 
+   * @return object output contains the output of the class.
+   */
+  @Override
+  public String getOutput() {
+    return output.GetOutput();
+  }
+
+}

@@ -1,0 +1,21 @@
+package jshell.jshellcore;
+
+public class Error {
+    
+    private String error;
+    
+    public Error() {
+    	
+    }
+    public static String NoSuchFile() {    
+      return "NO SUCH FILE";   
+    }
+    
+    public static String WrongDirectory() {
+      return  "NO SUCH DIRECTORY";
+    }
+    
+    public static String ThisIsNotFile() {
+      return "THIS IS NOT FILE";
+    }
+}

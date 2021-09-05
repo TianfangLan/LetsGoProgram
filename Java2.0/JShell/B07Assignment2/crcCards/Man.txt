@@ -1,0 +1,7 @@
+Class name: Man
+
+Responsibilities:
+* Excute the class will return the documentation of the command.
+
+Collaborators:
+*Command

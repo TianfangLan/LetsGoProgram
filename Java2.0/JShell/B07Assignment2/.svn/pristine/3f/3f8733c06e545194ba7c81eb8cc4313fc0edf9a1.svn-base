@@ -1,0 +1,17 @@
+package jshell.jshellcore;
+
+public class Man implements Command{
+
+  @Override
+  public void excute(String command) {
+    if (Mapper.getMapper().isExist(command)) {
+       System.out.println(Mapper.getMapper().getCommand(command).getDoc()); 
+    }
+  }
+  @Override
+  public String getDoc() {
+    return "man method will return the documentation of the input command";
+  }
+  
+
+}

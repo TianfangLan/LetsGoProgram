@@ -1,0 +1,27 @@
+package jshell.jshellloop;
+
+import java.util.ArrayList;
+
+public class Validator {
+	
+	ArrayList<String> allCommands;
+	
+	public Validator() {
+		allCommands = new ArrayList<>();
+		allCommands.add("exit");
+		allCommands.add("mkdir");
+		allCommands.add("cd");
+		allCommands.add("ls");
+		allCommands.add("pwd");
+		allCommands.add("pushd");
+		allCommands.add("popd");
+		allCommands.add("history");
+		allCommands.add("cat");
+		allCommands.add("echo");
+		allCommands.add("man");
+	}
+	
+	public boolean validateCommand(String inputCommand) {
+		return (this.allCommands.contains(inputCommand));
+	}
+}

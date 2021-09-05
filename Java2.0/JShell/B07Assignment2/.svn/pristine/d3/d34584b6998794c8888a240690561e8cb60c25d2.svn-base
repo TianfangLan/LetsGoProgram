@@ -1,0 +1,14 @@
+package jshell.jshellloop;
+
+public class Input {
+    
+    private String inputContent;
+  
+    public void SetInputContent(String content) {
+      this.inputContent = content;
+    }
+    
+    public String GetInputContent() {
+      return this.inputContent;
+    }
+}

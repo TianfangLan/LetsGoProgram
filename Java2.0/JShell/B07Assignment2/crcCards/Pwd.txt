@@ -1,0 +1,8 @@
+Class name: Pwd
+
+Responsibilities:
+*Excute the class pwd will print the current working directory
+
+Collaborators:
+*Command
+*FileSystem

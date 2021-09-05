@@ -1,0 +1,8 @@
+Class name: OutRedirector
+
+Responsibilities:
+*Create the file that need used to be redirect
+*Redirect the output of commands to that file
+
+Collaborators:
+*JShell

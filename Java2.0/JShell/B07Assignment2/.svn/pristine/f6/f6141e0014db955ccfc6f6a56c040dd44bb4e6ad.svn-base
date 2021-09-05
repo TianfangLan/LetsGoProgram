@@ -1,0 +1,45 @@
+Nov 19 - Nov 26
+
+User Stories from Product Backlog that we will address in this sprint:
+a) As a user, I need to redirect the output to a file
+b) As a user, I want to copy files
+c) As a user, I want to move files
+d) As a user, I want to save the status of the filesystem
+e) As a user, I want to load the previous status of the filesystem
+f) As a user, I want to list files in all subdirectories recuesively
+g) As a user, I want to find a file in the file system
+h) As a user, I want to see the file system visually as a tree
+
+Specific tasks to be accomplished:
+a-1. (Redirection) create Redirection Interface
+a-2. (RedirectOutput) create RedirectOutput class
+a-3. (Command) give Command interface and every command a method: getOutput()
+a-4. (Command) revise every class that implements Command to save the output of every command as an instance attribute
+a-5. (Spliter) reivse Spliter class to make it be able to split command with Redirection
+a-6. (Mapper) add new commands to Mapper 
+a-7. (Redirection) implements redirection in FileSystem
+a-8. (Output) revise Output Class to make it easier to redirect
+b-1. (Cp) create the cp command
+c-1. (Mv) create the mv command
+c-2. (Cat) change the command cat to make it can read several files with valid path.
+c-3. (FileSystem) change the fileSystem to make mv command faster and easier
+c-4. (Get) finish the get URL command.
+d-1. (Save) create the save command
+d-2. (Save) interact save command with FileSystem
+e-1. (Load) create the load command
+f-1. (Ls) change ls command
+g-1. (Find) create find command
+h-1. (Tree) create tree command
+
+
+User: Xianghu Dai
+Tasks: a-1, a-2, a-3, a-4, a-5, a-6, a-8
+
+User: Junxing Xu
+Tasks: b-1, d-2, a-7, g-1, h-1
+
+User: Tianfang Lan
+Tasks: c-1, c-2, c-3, c-4
+
+User: Jiahong Wang
+Tasks: d-1, e-1, f-1

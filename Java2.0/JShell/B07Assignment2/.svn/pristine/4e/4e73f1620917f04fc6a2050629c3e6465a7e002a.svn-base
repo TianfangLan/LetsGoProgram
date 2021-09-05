@@ -1,0 +1,10 @@
+Class name: DirectoryNode
+
+Responsibilities:
+*A node represents directory in the directory tree
+
+Parent:
+*Node
+
+Collaborators:
+*Directory

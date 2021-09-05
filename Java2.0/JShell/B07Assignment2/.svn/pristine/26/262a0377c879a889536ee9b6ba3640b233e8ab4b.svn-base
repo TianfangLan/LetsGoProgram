@@ -1,0 +1,25 @@
+package jshell.jshellcore;
+
+import jshell.exceptions.NotExistException;
+import jshell.files.FileSystem;
+
+public class Pushd implements Command{
+
+  @Override
+  public void excute(String arg) {
+    try {
+    	FileSystem.getSystem().push(arg); 
+    }
+    catch(NotExistException e) {
+    	System.out.println("pushd: "+e.getMessage());
+    }
+  }
+
+  @Override
+  public String getDoc() {
+    return "Push the working directory onto directory stack"
+        + "and then changes the new current working directory to the"
+        + "input directory";
+  }
+
+}

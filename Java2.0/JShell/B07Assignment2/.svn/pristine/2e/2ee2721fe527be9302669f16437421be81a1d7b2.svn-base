@@ -1,0 +1,11 @@
+Class name: Cat
+
+Responsibilities:
+*Excute cat will display the content of the file at the input class
+*otherwise it will throw a error
+
+Collaborators:
+*Commands
+*File
+*FileSystem
+*NotExistException

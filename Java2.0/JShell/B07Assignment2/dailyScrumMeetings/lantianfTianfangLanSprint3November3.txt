@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+    - finished all the commands
+    - think about how to error cases.
+What do I plan to work in the next three days?
+    - finished the error cases.
+
+
+Am I blocked on anything?
+    - what kind of error should be in the program

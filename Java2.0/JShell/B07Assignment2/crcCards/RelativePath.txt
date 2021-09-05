@@ -1,0 +1,10 @@
+Class name: RelativePath
+
+Responsibilities:
+*A relative path is a kind of path that has current path as the parent path
+
+Parent:
+*Path
+
+Collaborators:
+*Directory

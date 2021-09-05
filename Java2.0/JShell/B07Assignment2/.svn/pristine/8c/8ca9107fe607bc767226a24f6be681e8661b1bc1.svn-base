@@ -1,0 +1,209 @@
+package test.jshell.files;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import jshell.files.FileSystem;
+
+/**
+ * This is a test for {@link FileSystem}, it contains a
+ * real life example, jumping forward and backward between
+ * directories, create files or directories by using 
+ * relative path or absolute path.
+ * @author danielxu
+ *
+ */
+class FileSystemTest {
+
+	@Test
+	void test() {
+		/*
+		 * The following system will produce:
+		 *                    ''
+		 *          /                       \
+		 *        usr     					bin
+		 *       /    \				            \
+		 *  READ.txt   Assignment               temp
+		 *  			\                         \
+		 *  			CSCB07					CSCB07
+		 *  			 \							\
+		 *               test.java					test.java
+		 *          
+		 */
+		FileSystem sys = FileSystem.getSystem();
+		sys.clean();
+		assertEquals("/", sys.getCur());
+		
+		// create usr, bin under root
+		sys.newAbsoluteDir("/usr");
+		sys.newRelativeDir("bin");
+		assertEquals(2, sys.list().length);
+		assertEquals("usr", sys.list()[0]);
+		assertEquals("bin", sys.list()[1]);
+		
+		// create READ.txt in usr
+		sys.newRelativeFile("usr/READ.txt");
+		// create Assignment in usr
+		sys.newAbsoluteDir("/usr/Assignment");
+		
+		// current working at root
+		assertEquals("/", sys.getCur());
+		
+		// change to usr
+		sys.changeRelative("usr");
+		assertEquals("/usr", sys.getCur());
+		assertEquals(2, sys.list().length);
+		assertEquals("READ.txt", sys.list()[0]);
+		assertEquals("Assignment", sys.list()[1]);
+		
+		// create CSCB07 in Assignment
+		sys.newAbsoluteDir("/usr/Assignment/CSCB07");
+		
+		// change to Assignment
+		sys.changeRelative("Assignment");
+		assertEquals("/usr/Assignment", sys.getCur());
+		assertEquals(1, sys.list().length);
+		assertEquals("CSCB07", sys.list()[0]);
+		
+		// create test.java in CSCB07
+		sys.newRelativeFile("CSCB07/test.java");
+		
+		// change to CSCB07
+		sys.changeRelative("CSCB07");
+		assertEquals("/usr/Assignment/CSCB07", sys.getCur());
+		assertEquals(1, sys.list().length);
+		assertEquals("test.java", sys.list()[0]);
+		
+		// back to root
+		sys.changeAbsolute("/");
+		assertEquals("/", sys.getCur());
+		assertEquals(2, sys.list().length);
+		assertEquals("usr", sys.list()[0]);
+		assertEquals("bin", sys.list()[1]);
+		
+		// change to bin
+		sys.changeRelative("bin");
+		assertEquals("/bin", sys.getCur());
+		
+		// create /bin/temp
+		sys.newAbsoluteDir("/bin/temp");
+		assertEquals(1, sys.list().length);
+		assertEquals("temp", sys.list()[0]);
+		
+		// create /bin/temp/CSCB07
+		sys.newAbsoluteDir("/bin/temp/CSCB07");
+		
+		// change to temp/CSCB07
+		sys.changeRelative("temp/CSCB07");
+		assertEquals("/bin/temp/CSCB07", sys.getCur());
+		assertEquals(0, sys.list().length);
+		
+		// create /bin/temp/CSCB07/test.java
+		sys.newAbsoluteFile("/bin/temp/CSCB07/test.java");
+		assertEquals(1, sys.list().length);
+		assertEquals("test.java", sys.list()[0]);
+		
+		// jump to /usr/Assignemnt
+		sys.changeAbsolute("/usr/Assignment///");
+		assertEquals("/usr/Assignment", sys.getCur());
+		assertEquals(1, sys.list().length);
+		assertEquals("CSCB07", sys.list()[0]);
+		
+		sys.clean();
+		assertEquals("/", sys.getCur());
+		assertEquals(0, sys.list().length);
+	}
+	
+	@Test
+	void curLastTest() {
+		/*
+		 * Produce:
+		 * 			''
+		 *        /    \
+		 *      usr     bin
+		 *     /          \
+		 *   READ.txt      example.java
+		 */
+		FileSystem sys = FileSystem.getSystem();
+		// remove tests from previous test
+		sys.clean();
+		
+		// create /usr involve .
+		sys.newRelativeDir("./usr");
+		assertEquals(1, sys.list().length);
+		assertEquals("usr", sys.list()[0]);
+		
+		// create /bin involve more .
+		sys.newAbsoluteDir("/./././bin");
+		assertEquals(2, sys.list().length);
+		assertEquals("bin", sys.list()[1]);
+		
+		// change dir involve .
+		sys.changeAbsolute("/usr/././././");
+		assertEquals("/usr", sys.getCur());
+		
+		// create READ.txt involve both . and ..
+		sys.newAbsoluteFile("/././usr/../usr/READ.txt");
+		assertEquals(1, sys.list().length);
+		assertEquals("READ.txt", sys.list()[0]);
+		
+		// change back to root by ..
+		sys.changeRelative("..");
+		assertEquals("/", sys.getCur());
+		
+	}
+	
+	@Test
+	void dotsTest() {
+		/*
+		 * Produce:
+		 * 			''
+		 *        /    \
+		 *      usr     bin
+		 *     /          \
+		 *   temp        exmaple.java
+		 *   /  
+		 *  READ.txt    
+		 */
+		FileSystem sys = FileSystem.getSystem();
+		// remove tests from previous test
+		sys.clean();
+		
+		// create /usr, /bin
+		sys.newAbsoluteDir("/usr");
+		sys.newAbsoluteDir("/bin");
+				
+		// create temp
+		sys.newAbsoluteDir("/usr/.././usr/././temp");
+		sys.changeRelative("usr");
+		assertEquals("/usr", sys.getCur());
+		assertEquals(1, sys.list().length);
+		assertEquals("temp", sys.list()[0]);
+		
+		// create READ.txt
+		sys.newRelativeFile(".././usr/./temp/../temp/READ.txt");
+		sys.changeRelative("../usr/temp");
+		assertEquals("/usr/temp", sys.getCur());
+		assertEquals(1, sys.list().length);
+		assertEquals("READ.txt", sys.list()[0]);
+		
+		// change back to root
+		sys.changeRelative("../..");
+		assertEquals("/", sys.getCur());
+		assertEquals(2, sys.list().length);
+		assertEquals("usr", sys.list()[0]);
+		assertEquals("bin", sys.list()[1]);
+		
+		// change to bin
+		sys.changeAbsolute("/bin/.././bin");
+		assertEquals("/bin", sys.getCur());
+		assertEquals(0, sys.list().length);
+		
+		// create example.java
+		sys.newRelativeFile("../bin/./example.java");
+		assertEquals(1, sys.list().length);
+		assertEquals("example.java", sys.list()[0]);
+	}
+	
+}

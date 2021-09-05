@@ -1,0 +1,1266 @@
++++ASSIGNMENT2 TEAM MEMBER CONTRIBUTION+++
+
+
+
+PART 1) +++SVN CHECKOUT ON YOUR ASSIGNMENT1+++
+Redirecting to URL 'https://markus.utsc.utoronto.ca/svn/cscb07f18/group_0399/Assignment2':
+A    Assignment2/crcCards
+A    Assignment2/dailyScrumMeetings
+A    Assignment2/crcCards/Cat.txt
+A    Assignment2/crcCards/Cd.txt
+A    Assignment2/crcCards/Command.txt
+A    Assignment2/crcCards/CommandStatus.txt
+A    Assignment2/crcCards/Directory.txt
+A    Assignment2/crcCards/DirectoryNode.txt
+A    Assignment2/crcCards/Popd.txt
+A    Assignment2/crcCards/Pushd.txt
+A    Assignment2/crcCards/RelativePath.txt
+A    Assignment2/crcCards/Spliter.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint1October20.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint2October30.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint1October23.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint3November3.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint4November18.txt
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanNovember7
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint2October27.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint4November15.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint5November26.txt
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint1October23.txt
+A    Assignment2/crcCards/Echo.txt
+A    Assignment2/crcCards/Exit.txt
+A    Assignment2/crcCards/File.txt
+A    Assignment2/crcCards/FileNode.txt
+A    Assignment2/crcCards/FileSystem.txt
+A    Assignment2/crcCards/Get.txt
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint4November15.txt
+A    Assignment2/dailyScrumMeetings/readMeDailyScrumMeetings.txt
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint2October30.txt
+A    Assignment2/productBacklog
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint3November3.txt
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint5November26.txt
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint2October27.txt
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint4November18.txt
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint1October20.txt
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint3November3.txt
+A    Assignment2/sprints
+A    Assignment2/crcCards/History.txt
+A    Assignment2/crcCards/Input.txt
+A    Assignment2/crcCards/JShell.txt
+A    Assignment2/crcCards/Load.txt
+A    Assignment2/crcCards/Ls.txt
+A    Assignment2/crcCards/Man.txt
+A    Assignment2/src
+A    Assignment2/src/driver
+A    Assignment2/src/jshell
+A    Assignment2/src/jshell/exceptions
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint4November18.txt
+A    Assignment2/dailyScrumMeetings/xujunxinJunxingXuSprint1October23.txt
+A    Assignment2/src/jshell/files
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint5November22.txt
+A    Assignment2/dailyScrumMeetings/xujunxinJunxingXuSprint2October27.txt
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint4November15.txt
+A    Assignment2/dailyScrumMeetings/xujunxinJunxingXuSprint1October20.txt
+A    Assignment2/dailyScrumMeetings/xujunxinJunxingXuSprint5November22.txt
+A    Assignment2/sprints/Sprint1Backlog.txt
+A    Assignment2/dailyScrumMeetings/xujunxinJunxingXuSprint4November15.txt
+A    Assignment2/productBacklog/readMeProductBacklog.txt
+A    Assignment2/sprints/Sprint4Backlog.txt
+A    Assignment2/dailyScrumMeetings/xujunxinJunxingXuSprint3November3.txt
+A    Assignment2/productBacklog/productBacklogFor2B.txt
+A    Assignment2/sprints/Sprint3Backlog.txt
+A    Assignment2/src/jshell/jshellcore
+A    Assignment2/src/jshell/jshellcore/command
+A    Assignment2/crcCards/Mapper.txt
+A    Assignment2/crcCards/Mkdir.txt
+A    Assignment2/crcCards/Mv.txt
+A    Assignment2/crcCards/Node.txt
+A    Assignment2/crcCards/OutRedirector.txt
+A    Assignment2/crcCards/Output.txt
+A    Assignment2/src/driver/JShell.java
+A    Assignment2/src/jshell/files/Directory.java
+A    Assignment2/src/jshell/files/FileSystem.java
+A    Assignment2/sprints/Sprint5Backlog.txt
+A    Assignment2/src/jshell/exceptions/InvalidParentNode.java
+A    Assignment2/src/jshell/files/File.java
+A    Assignment2/src/jshell/files/Path.java
+A    Assignment2/src/jshell/jshellcore/command/Cd.java
+A    Assignment2/src/jshell/jshellcore/command/Find.java
+A    Assignment2/src/jshell/jshellcore/command/Ls.java
+A    Assignment2/crcCards/Path.txt
+A    Assignment2/crcCards/Prompter.txt
+A    Assignment2/crcCards/Pwd.txt
+A    Assignment2/crcCards/Save.txt
+A    Assignment2/crcCards/readMeForCrcCards.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint2October27.txt
+A    Assignment2/src/jshell/exceptions/InvalidArgException.java
+A    Assignment2/src/jshell/files/DirectoryNode.java
+A    Assignment2/src/jshell/files/Node.java
+A    Assignment2/src/jshell/jshellcore/command/Cat.java
+A    Assignment2/src/jshell/jshellcore/command/Exit.java
+A    Assignment2/src/jshell/jshellcore/command/Load.java
+A    Assignment2/src/test
+A    Assignment2/src/test/jshell
+A    Assignment2/src/test/jshell/core
+A    Assignment2/src/test/jshell/files
+A    Assignment2/src/jshell/files/RelativePath.java
+A    Assignment2/src/jshell/jshellcore/command/Echo.java
+A    Assignment2/src/jshell/jshellcore/command/History.java
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint3November7.txt
+A    Assignment2/dailyScrumMeetings/daixian1XianghuDaiSprint5November22.txt
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint1October20.txt
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint2October29.txt
+A    Assignment2/dailyScrumMeetings/lantianfTianfangLanSprint5November22.txt
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint1October23.txt
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint3November7.txt
+A    Assignment2/dailyScrumMeetings/wangj398JiahongWangSprint5November26.txt
+A    Assignment2/dailyScrumMeetings/xujunxinJunxingXuSprint2October30.txt
+A    Assignment2/productBacklog/productBacklogFor2A.txt
+A    Assignment2/sprints/Sprint2Backlog.txt
+A    Assignment2/src/jshell/jshellcore/command/Popd.java
+A    Assignment2/src/jshell/jshellcore/command/Tree.java
+A    Assignment2/src/jshell/jshellcore/Error.java
+A    Assignment2/src/jshell/jshellcore/command/Mv.java
+A    Assignment2/src/jshell/jshellcore/command/Save.java
+A    Assignment2/src/jshell/jshellcore/CommandStatus.java
+A    Assignment2/src/jshell/jshellcore/command/Mkdir.java
+A    Assignment2/src/jshell/jshellcore/command/Pwd.java
+A    Assignment2/src/jshell/jshellcore/Command.java
+A    Assignment2/sprints/readMeSprints.txt
+A    Assignment2/src/jshell/exceptions/NotExistException.java
+A    Assignment2/src/jshell/files/FileNode.java
+A    Assignment2/src/jshell/jshellcore/Output.java
+A    Assignment2/src/test/jshell/files/DirectoryNodeTest.java
+A    Assignment2/src/test/jshell/files/FileTest.java
+A    Assignment2/group_0399Assignment2AMark.txt
+A    Assignment2/src/jshell/jshellcore/OutRedirector.java
+A    Assignment2/src/test/jshell/core/ArgParserTest.java
+A    Assignment2/src/test/jshell/files/FileSystemTest.java
+A    Assignment2/group_0399Assignment2AContribution.txt
+A    Assignment2/src/jshell/jshellcore/Mapper.java
+A    Assignment2/src/jshell/jshellcore/Spliter.java
+A    Assignment2/src/test/jshell/files/FileNodeTest.java
+A    Assignment2/src/test/jshell/files/PreprocessorTest.java
+A    Assignment2/src/jshell/files/PathPreprocessor.java
+A    Assignment2/src/jshell/jshellcore/command/Cp.java
+A    Assignment2/src/jshell/jshellcore/command/Get.java
+A    Assignment2/src/jshell/jshellcore/command/Man.java
+A    Assignment2/src/jshell/jshellcore/command/Pushd.java
+A    Assignment2/src/jshell/jshellcore/ArgParser.java
+A    Assignment2/src/jshell/jshellcore/Input.java
+A    Assignment2/src/jshell/jshellcore/Prompter.java
+A    Assignment2/src/test/jshell/files/DirectoryTest.java
+A    Assignment2/src/test/jshell/files/PathTest.java
+A    Assignment2/readMeAssignment2A.txt
+Checked out revision 256.
+
+
+
+PART 2) +++SVN COMMIT LOGS ARE+++
+Marks Deductions here (-.5 max): 
+------------------------------------------------------------------------
+r256 | wangj398@UTORONTO.CA | 2018-11-26 21:52:29 -0500 (Mon, 26 Nov 2018) | 1 line
+
+commit dailt scrum of November 26
+------------------------------------------------------------------------
+r255 | lantianf@UTORONTO.CA | 2018-11-26 21:52:28 -0500 (Mon, 26 Nov 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r254 | wangj398@UTORONTO.CA | 2018-11-26 21:47:25 -0500 (Mon, 26 Nov 2018) | 1 line
+
+commit new crccard
+------------------------------------------------------------------------
+r253 | wangj398@UTORONTO.CA | 2018-11-26 21:46:38 -0500 (Mon, 26 Nov 2018) | 1 line
+
+store the error output
+------------------------------------------------------------------------
+r252 | wangj398@UTORONTO.CA | 2018-11-26 21:41:12 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fit new requirement of error output
+------------------------------------------------------------------------
+r251 | wangj398@UTORONTO.CA | 2018-11-26 21:32:53 -0500 (Mon, 26 Nov 2018) | 1 line
+
+add erroroutput in output class, and fit the new requirement for all commands
+------------------------------------------------------------------------
+r250 | wangj398@UTORONTO.CA | 2018-11-26 20:46:38 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fit 80 characters rule of command
+------------------------------------------------------------------------
+r249 | xujunxin@UTORONTO.CA | 2018-11-26 19:55:42 -0500 (Mon, 26 Nov 2018) | 1 line
+
+Copy file will overwrite the directory
+------------------------------------------------------------------------
+r248 | lantianf@UTORONTO.CA | 2018-11-26 19:14:22 -0500 (Mon, 26 Nov 2018) | 1 line
+
+change the error message
+------------------------------------------------------------------------
+r247 | xujunxin@UTORONTO.CA | 2018-11-26 18:59:17 -0500 (Mon, 26 Nov 2018) | 1 line
+
+Fixed a bug that cannot copy file to a directory
+------------------------------------------------------------------------
+r246 | xujunxin@UTORONTO.CA | 2018-11-26 18:38:00 -0500 (Mon, 26 Nov 2018) | 1 line
+
+Fixed a bug that causes file copy failed
+------------------------------------------------------------------------
+r245 | daixian1@UTORONTO.CA | 2018-11-26 17:15:07 -0500 (Mon, 26 Nov 2018) | 1 line
+
+add crcCards of OutRedirector
+------------------------------------------------------------------------
+r244 | daixian1@UTORONTO.CA | 2018-11-26 17:09:56 -0500 (Mon, 26 Nov 2018) | 2 lines
+
+add javadoc to JShell
+
+------------------------------------------------------------------------
+r243 | daixian1@UTORONTO.CA | 2018-11-26 17:09:30 -0500 (Mon, 26 Nov 2018) | 1 line
+
+add javadoc to Command Input Spliter.
+------------------------------------------------------------------------
+r242 | daixian1@UTORONTO.CA | 2018-11-26 17:00:20 -0500 (Mon, 26 Nov 2018) | 2 lines
+
+add javadoc to CommandStatus and Mapper
+
+------------------------------------------------------------------------
+r241 | lantianf@UTORONTO.CA | 2018-11-26 16:54:18 -0500 (Mon, 26 Nov 2018) | 1 line
+
+bug fixed
+------------------------------------------------------------------------
+r240 | daixian1@UTORONTO.CA | 2018-11-26 16:41:44 -0500 (Mon, 26 Nov 2018) | 1 line
+
+add dailyScrummeetings of XianghuDai
+------------------------------------------------------------------------
+r239 | wangj398@UTORONTO.CA | 2018-11-26 16:35:20 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fit bug of ls command
+------------------------------------------------------------------------
+r238 | daixian1@UTORONTO.CA | 2018-11-26 16:29:10 -0500 (Mon, 26 Nov 2018) | 2 lines
+
+fixed a bug in Pwd
+
+------------------------------------------------------------------------
+r237 | daixian1@UTORONTO.CA | 2018-11-26 16:27:46 -0500 (Mon, 26 Nov 2018) | 2 lines
+
+fixed a bug in Cp
+
+------------------------------------------------------------------------
+r236 | lantianf@UTORONTO.CA | 2018-11-26 16:24:50 -0500 (Mon, 26 Nov 2018) | 1 line
+
+added doc for get and finished the CRC card for get and mv
+------------------------------------------------------------------------
+r235 | wangj398@UTORONTO.CA | 2018-11-26 15:23:26 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fit bug of cat
+------------------------------------------------------------------------
+r234 | lantianf@UTORONTO.CA | 2018-11-26 15:12:42 -0500 (Mon, 26 Nov 2018) | 1 line
+
+bug fixed: now if file name contains ".", command will remove things like .txt and .html
+------------------------------------------------------------------------
+r233 | lantianf@UTORONTO.CA | 2018-11-26 14:48:57 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fixed the bug: now if moved file has the same name with one of the child in the target directory, it will over write the directory.
+------------------------------------------------------------------------
+r232 | wangj398@UTORONTO.CA | 2018-11-26 14:18:49 -0500 (Mon, 26 Nov 2018) | 1 line
+
+add new to mapper
+------------------------------------------------------------------------
+r231 | wangj398@UTORONTO.CA | 2018-11-26 14:15:33 -0500 (Mon, 26 Nov 2018) | 1 line
+
+add new variable in history command so that it can store to command from load command,and update load and save to fit the change of history
+------------------------------------------------------------------------
+r230 | wangj398@UTORONTO.CA | 2018-11-26 12:36:21 -0500 (Mon, 26 Nov 2018) | 1 line
+
+change code of mkdir command so that it can create multiple directories 
+------------------------------------------------------------------------
+r229 | daixian1@UTORONTO.CA | 2018-11-26 12:15:51 -0500 (Mon, 26 Nov 2018) | 1 line
+
+add error handdling in OutRedirector
+------------------------------------------------------------------------
+r228 | lantianf@UTORONTO.CA | 2018-11-26 12:11:04 -0500 (Mon, 26 Nov 2018) | 1 line
+
+import get
+------------------------------------------------------------------------
+r227 | lantianf@UTORONTO.CA | 2018-11-26 12:07:13 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fix the error message
+------------------------------------------------------------------------
+r226 | lantianf@UTORONTO.CA | 2018-11-26 12:06:53 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fix the bug: now item cannot be moved to it's sub directory.
+------------------------------------------------------------------------
+r225 | wangj398@UTORONTO.CA | 2018-11-26 11:57:24 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fit bugs of history and ls command
+------------------------------------------------------------------------
+r224 | lantianf@UTORONTO.CA | 2018-11-26 11:28:43 -0500 (Mon, 26 Nov 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r223 | daixian1@UTORONTO.CA | 2018-11-26 11:26:43 -0500 (Mon, 26 Nov 2018) | 2 lines
+
+fixed a bug in JShell
+
+------------------------------------------------------------------------
+r222 | daixian1@UTORONTO.CA | 2018-11-26 11:22:06 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fix a bug in JShell
+------------------------------------------------------------------------
+r221 | lantianf@UTORONTO.CA | 2018-11-26 11:15:53 -0500 (Mon, 26 Nov 2018) | 1 line
+
+now move file to file will overwrite the goal file with the old file
+------------------------------------------------------------------------
+r220 | wangj398@UTORONTO.CA | 2018-11-26 11:10:27 -0500 (Mon, 26 Nov 2018) | 1 line
+
+change code of ls command
+------------------------------------------------------------------------
+r219 | daixian1@UTORONTO.CA | 2018-11-26 11:08:40 -0500 (Mon, 26 Nov 2018) | 1 line
+
+add honor code to OutRedirector
+------------------------------------------------------------------------
+r218 | wangj398@UTORONTO.CA | 2018-11-26 11:05:57 -0500 (Mon, 26 Nov 2018) | 1 line
+
+fit bug of mkdir command
+------------------------------------------------------------------------
+r217 | xujunxin@UTORONTO.CA | 2018-11-26 10:15:09 -0500 (Mon, 26 Nov 2018) | 1 line
+
+Added hornor code
+------------------------------------------------------------------------
+r216 | xujunxin@UTORONTO.CA | 2018-11-26 10:12:11 -0500 (Mon, 26 Nov 2018) | 1 line
+
+Added find command
+------------------------------------------------------------------------
+r215 | lantianf@UTORONTO.CA | 2018-11-26 09:54:27 -0500 (Mon, 26 Nov 2018) | 1 line
+
+sprint5 for tianfanglan
+------------------------------------------------------------------------
+r214 | xujunxin@UTORONTO.CA | 2018-11-26 09:06:33 -0500 (Mon, 26 Nov 2018) | 1 line
+
+Added sprint
+------------------------------------------------------------------------
+r213 | wangj398@UTORONTO.CA | 2018-11-25 22:45:00 -0500 (Sun, 25 Nov 2018) | 1 line
+
+November 22 daily scrum of jiahong wang
+------------------------------------------------------------------------
+r212 | wangj398@UTORONTO.CA | 2018-11-25 22:42:39 -0500 (Sun, 25 Nov 2018) | 1 line
+
+finish the new requirement of ls command
+------------------------------------------------------------------------
+r211 | wangj398@UTORONTO.CA | 2018-11-25 21:30:15 -0500 (Sun, 25 Nov 2018) | 1 line
+
+update save and load command, fit bugs of mkdir and ls command
+------------------------------------------------------------------------
+r210 | lantianf@UTORONTO.CA | 2018-11-25 20:50:36 -0500 (Sun, 25 Nov 2018) | 1 line
+
+added javadoc for move mothods, and added the Invalid parent error into the code
+------------------------------------------------------------------------
+r209 | lantianf@UTORONTO.CA | 2018-11-25 20:44:30 -0500 (Sun, 25 Nov 2018) | 1 line
+
+debug the mv when input path is not valid, it will thorw an error.
+------------------------------------------------------------------------
+r208 | lantianf@UTORONTO.CA | 2018-11-25 20:35:40 -0500 (Sun, 25 Nov 2018) | 1 line
+
+a new error when parent node is not valid
+------------------------------------------------------------------------
+r207 | lantianf@UTORONTO.CA | 2018-11-25 20:18:34 -0500 (Sun, 25 Nov 2018) | 1 line
+
+finished the base code for get
+------------------------------------------------------------------------
+r206 | wangj398@UTORONTO.CA | 2018-11-25 18:44:20 -0500 (Sun, 25 Nov 2018) | 1 line
+
+update the output of history command
+------------------------------------------------------------------------
+r205 | xujunxin@UTORONTO.CA | 2018-11-25 18:15:55 -0500 (Sun, 25 Nov 2018) | 1 line
+
+Added ArgParser class which can parse input from command
+------------------------------------------------------------------------
+r204 | daixian1@UTORONTO.CA | 2018-11-25 17:53:13 -0500 (Sun, 25 Nov 2018) | 2 lines
+
+revise Man and Pwd to make them able to redirect
+
+------------------------------------------------------------------------
+r203 | daixian1@UTORONTO.CA | 2018-11-25 17:43:23 -0500 (Sun, 25 Nov 2018) | 1 line
+
+revise Echo and Tree to make them able to redirect
+------------------------------------------------------------------------
+r202 | xujunxin@UTORONTO.CA | 2018-11-25 17:25:25 -0500 (Sun, 25 Nov 2018) | 1 line
+
+Implemented tree command
+------------------------------------------------------------------------
+r201 | xujunxin@UTORONTO.CA | 2018-11-25 17:00:09 -0500 (Sun, 25 Nov 2018) | 1 line
+
+Added cp command, bug fixed
+------------------------------------------------------------------------
+r200 | daixian1@UTORONTO.CA | 2018-11-25 16:32:36 -0500 (Sun, 25 Nov 2018) | 1 line
+
+add java doc and comment to some classes
+------------------------------------------------------------------------
+r199 | daixian1@UTORONTO.CA | 2018-11-25 16:28:32 -0500 (Sun, 25 Nov 2018) | 2 lines
+
+revise the driver to make it able to redirect
+
+------------------------------------------------------------------------
+r198 | wangj398@UTORONTO.CA | 2018-11-25 14:12:06 -0500 (Sun, 25 Nov 2018) | 1 line
+
+update the code of save command, the command will overwrite the given filename
+------------------------------------------------------------------------
+r197 | daixian1@UTORONTO.CA | 2018-11-25 01:49:00 -0500 (Sun, 25 Nov 2018) | 1 line
+
+revised some classes to make them be able to redirect
+------------------------------------------------------------------------
+r196 | wangj398@UTORONTO.CA | 2018-11-24 16:52:17 -0500 (Sat, 24 Nov 2018) | 1 line
+
+finish the first version of load commend but still need to debug
+------------------------------------------------------------------------
+r195 | daixian1@UTORONTO.CA | 2018-11-24 15:52:52 -0500 (Sat, 24 Nov 2018) | 1 line
+
+add daily scrum meeting of XianghuDai on Nov 22
+------------------------------------------------------------------------
+r194 | wangj398@UTORONTO.CA | 2018-11-24 12:38:55 -0500 (Sat, 24 Nov 2018) | 1 line
+
+update history command code so that save command able to run
+------------------------------------------------------------------------
+r193 | wangj398@UTORONTO.CA | 2018-11-24 12:34:29 -0500 (Sat, 24 Nov 2018) | 1 line
+
+finish the save command but still need to debug
+------------------------------------------------------------------------
+r192 | daixian1@UTORONTO.CA | 2018-11-20 21:58:31 -0500 (Tue, 20 Nov 2018) | 1 line
+
+revise the name of method related to Output Class
+------------------------------------------------------------------------
+r191 | daixian1@UTORONTO.CA | 2018-11-20 21:55:46 -0500 (Tue, 20 Nov 2018) | 1 line
+
+revise Output class to make it easier to redirect output of command
+------------------------------------------------------------------------
+r190 | daixian1@UTORONTO.CA | 2018-11-20 21:32:42 -0500 (Tue, 20 Nov 2018) | 1 line
+
+revise sprint 5 backlog
+------------------------------------------------------------------------
+r189 | daixian1@UTORONTO.CA | 2018-11-20 14:00:32 -0500 (Tue, 20 Nov 2018) | 1 line
+
+set default output as empty string
+------------------------------------------------------------------------
+r188 | lantianf@UTORONTO.CA | 2018-11-20 12:28:09 -0500 (Tue, 20 Nov 2018) | 1 line
+
+added import mv command class
+------------------------------------------------------------------------
+r187 | daixian1@UTORONTO.CA | 2018-11-20 12:27:54 -0500 (Tue, 20 Nov 2018) | 2 lines
+
+revise sprint 5 backlog
+
+------------------------------------------------------------------------
+r186 | lantianf@UTORONTO.CA | 2018-11-20 12:25:06 -0500 (Tue, 20 Nov 2018) | 1 line
+
+added new method to generate mv command
+------------------------------------------------------------------------
+r185 | lantianf@UTORONTO.CA | 2018-11-20 11:33:08 -0500 (Tue, 20 Nov 2018) | 1 line
+
+base code for Mv, also come up with the change in FileSystem, Directory and DirectoryNode.
+------------------------------------------------------------------------
+r184 | wangj398@UTORONTO.CA | 2018-11-19 22:35:33 -0500 (Mon, 19 Nov 2018) | 1 line
+
+add new tasks for user jiahong wang
+------------------------------------------------------------------------
+r183 | lantianf@UTORONTO.CA | 2018-11-19 22:21:43 -0500 (Mon, 19 Nov 2018) | 1 line
+
+sprint5
+------------------------------------------------------------------------
+r182 | xujunxin@UTORONTO.CA | 2018-11-19 22:11:42 -0500 (Mon, 19 Nov 2018) | 1 line
+
+Added my part of sprint
+------------------------------------------------------------------------
+r181 | daixian1@UTORONTO.CA | 2018-11-19 22:07:08 -0500 (Mon, 19 Nov 2018) | 1 line
+
+add backlog of sprint 5
+------------------------------------------------------------------------
+r180 | daixian1@UTORONTO.CA | 2018-11-19 21:58:14 -0500 (Mon, 19 Nov 2018) | 1 line
+
+add getOutput() method to Command interface
+------------------------------------------------------------------------
+r179 | daixian1@UTORONTO.CA | 2018-11-19 21:54:48 -0500 (Mon, 19 Nov 2018) | 1 line
+
+add getOutput() method to every single command
+------------------------------------------------------------------------
+r178 | daixian1@UTORONTO.CA | 2018-11-19 21:18:50 -0500 (Mon, 19 Nov 2018) | 1 line
+
+add new commands to Mapper
+------------------------------------------------------------------------
+r177 | wangj398@UTORONTO.CA | 2018-11-19 01:29:19 -0500 (Mon, 19 Nov 2018) | 1 line
+
+base code of save command
+------------------------------------------------------------------------
+r176 | wangj398@UTORONTO.CA | 2018-11-18 23:44:17 -0500 (Sun, 18 Nov 2018) | 1 line
+
+daliy scrum
+------------------------------------------------------------------------
+r175 | daixian1@UTORONTO.CA | 2018-11-18 22:51:59 -0500 (Sun, 18 Nov 2018) | 1 line
+
+add dailyscrum of XianghuDai on November18
+------------------------------------------------------------------------
+r174 | lantianf@UTORONTO.CA | 2018-11-18 22:12:20 -0500 (Sun, 18 Nov 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r173 | xujunxin@UTORONTO.CA | 2018-11-18 17:39:52 -0500 (Sun, 18 Nov 2018) | 1 line
+
+Fixed all bugs found in a2a
+------------------------------------------------------------------------
+r172 | tamman5@UTORONTO.CA | 2018-11-18 10:47:27 -0500 (Sun, 18 Nov 2018) | 1 line
+
+Assignment2A Marks
+------------------------------------------------------------------------
+r171 | tamman5@UTORONTO.CA | 2018-11-18 10:46:52 -0500 (Sun, 18 Nov 2018) | 1 line
+
+Assignment2A Members Contribution Stats
+------------------------------------------------------------------------
+r170 | lantianf@UTORONTO.CA | 2018-11-17 18:54:10 -0500 (Sat, 17 Nov 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r169 | wangj398@UTORONTO.CA | 2018-11-17 12:04:08 -0500 (Sat, 17 Nov 2018) | 1 line
+
+November 15 daily scrum
+------------------------------------------------------------------------
+r168 | xujunxin@UTORONTO.CA | 2018-11-16 16:58:17 -0500 (Fri, 16 Nov 2018) | 1 line
+
+Rearranged folders, separate command from JshellCore
+------------------------------------------------------------------------
+r167 | xujunxin@UTORONTO.CA | 2018-11-16 16:35:28 -0500 (Fri, 16 Nov 2018) | 1 line
+
+Added daily scrum meetings
+------------------------------------------------------------------------
+r166 | daixian1@UTORONTO.CA | 2018-11-16 01:33:27 -0500 (Fri, 16 Nov 2018) | 1 line
+
+add daily scrum
+------------------------------------------------------------------------
+r165 | daixian1@UTORONTO.CA | 2018-11-13 23:36:53 -0500 (Tue, 13 Nov 2018) | 1 line
+
+add sprint 4 productbacklog
+------------------------------------------------------------------------
+r164 | daixian1@UTORONTO.CA | 2018-11-11 23:29:39 -0500 (Sun, 11 Nov 2018) | 1 line
+
+add product Backlog for 2b
+------------------------------------------------------------------------
+r163 | daixian1@UTORONTO.CA | 2018-11-08 00:00:18 -0500 (Thu, 08 Nov 2018) | 1 line
+
+add daily scrum
+------------------------------------------------------------------------
+r162 | lantianf@UTORONTO.CA | 2018-11-07 23:59:03 -0500 (Wed, 07 Nov 2018) | 1 line
+
+sprint for tianfanglan
+------------------------------------------------------------------------
+r161 | wangj398@UTORONTO.CA | 2018-11-07 23:58:24 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+last scrum meeting
+
+------------------------------------------------------------------------
+r160 | xujunxin@UTORONTO.CA | 2018-11-07 21:40:24 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Fixed a bug that will create directories with the same name
+------------------------------------------------------------------------
+r159 | lantianf@UTORONTO.CA | 2018-11-07 20:58:05 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Added the honor code for Tianfang Lan
+------------------------------------------------------------------------
+r158 | wangj398@UTORONTO.CA | 2018-11-07 20:42:00 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add honor code
+------------------------------------------------------------------------
+r157 | xujunxin@UTORONTO.CA | 2018-11-07 20:03:21 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Added honor code
+------------------------------------------------------------------------
+r156 | xujunxin@UTORONTO.CA | 2018-11-07 19:59:22 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Reformatted code
+------------------------------------------------------------------------
+r155 | daixian1@UTORONTO.CA | 2018-11-07 19:58:16 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add honor code
+------------------------------------------------------------------------
+r154 | wangj398@UTORONTO.CA | 2018-11-07 18:55:47 -0500 (Wed, 07 Nov 2018) | 1 line
+
+fit the format and add javadoc 
+------------------------------------------------------------------------
+r153 | daixian1@UTORONTO.CA | 2018-11-07 13:36:31 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add honor code
+------------------------------------------------------------------------
+r152 | daixian1@UTORONTO.CA | 2018-11-07 13:35:38 -0500 (Wed, 07 Nov 2018) | 1 line
+
+revise the crc cards
+------------------------------------------------------------------------
+r151 | daixian1@UTORONTO.CA | 2018-11-07 13:32:29 -0500 (Wed, 07 Nov 2018) | 1 line
+
+delete the recorder
+------------------------------------------------------------------------
+r150 | daixian1@UTORONTO.CA | 2018-11-07 13:32:05 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+delete the recorder
+
+------------------------------------------------------------------------
+r149 | xujunxin@UTORONTO.CA | 2018-11-07 12:26:31 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Added crc cards
+------------------------------------------------------------------------
+r148 | lantianf@UTORONTO.CA | 2018-11-07 07:28:14 -0500 (Wed, 07 Nov 2018) | 1 line
+
+rename Filetest to FileTest
+------------------------------------------------------------------------
+r147 | lantianf@UTORONTO.CA | 2018-11-07 07:27:20 -0500 (Wed, 07 Nov 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r146 | wangj398@UTORONTO.CA | 2018-11-06 22:09:57 -0500 (Tue, 06 Nov 2018) | 1 line
+
+submit part of the crcCards text file
+------------------------------------------------------------------------
+r145 | lantianf@UTORONTO.CA | 2018-11-06 22:06:10 -0500 (Tue, 06 Nov 2018) | 1 line
+
+CRC cards for Cat, Echo, Man, Popd, Pushd, Command, File and Pwd
+------------------------------------------------------------------------
+r144 | lantianf@UTORONTO.CA | 2018-11-06 21:35:27 -0500 (Tue, 06 Nov 2018) | 1 line
+
+fix syntax error of command and java doc
+------------------------------------------------------------------------
+r143 | lantianf@UTORONTO.CA | 2018-11-06 19:45:25 -0500 (Tue, 06 Nov 2018) | 1 line
+
+CRC cards for Command and File
+------------------------------------------------------------------------
+r142 | lantianf@UTORONTO.CA | 2018-11-06 19:16:32 -0500 (Tue, 06 Nov 2018) | 1 line
+
+change the format for the commands
+------------------------------------------------------------------------
+r141 | lantianf@UTORONTO.CA | 2018-11-06 18:57:33 -0500 (Tue, 06 Nov 2018) | 1 line
+
+change the format
+------------------------------------------------------------------------
+r140 | wangj398@UTORONTO.CA | 2018-11-06 18:36:44 -0500 (Tue, 06 Nov 2018) | 1 line
+
+Add name in JShell
+------------------------------------------------------------------------
+r139 | lantianf@UTORONTO.CA | 2018-11-06 18:19:50 -0500 (Tue, 06 Nov 2018) | 1 line
+
+Honor code for Tianfanglan
+------------------------------------------------------------------------
+r138 | lantianf@UTORONTO.CA | 2018-11-06 18:17:45 -0500 (Tue, 06 Nov 2018) | 1 line
+
+change the format to google format
+------------------------------------------------------------------------
+r137 | lantianf@UTORONTO.CA | 2018-11-06 18:11:28 -0500 (Tue, 06 Nov 2018) | 1 line
+
+figured the "" cases
+------------------------------------------------------------------------
+r136 | xujunxin@UTORONTO.CA | 2018-11-06 17:53:45 -0500 (Tue, 06 Nov 2018) | 1 line
+
+Added my name on honor code
+------------------------------------------------------------------------
+r135 | lantianf@UTORONTO.CA | 2018-11-06 06:22:41 -0500 (Tue, 06 Nov 2018) | 1 line
+
+added java doc to the popd
+------------------------------------------------------------------------
+r134 | lantianf@UTORONTO.CA | 2018-11-06 06:15:01 -0500 (Tue, 06 Nov 2018) | 1 line
+
+added java doc to the man.java
+------------------------------------------------------------------------
+r133 | lantianf@UTORONTO.CA | 2018-11-06 06:08:42 -0500 (Tue, 06 Nov 2018) | 1 line
+
+added java doc to the class pwd.java
+------------------------------------------------------------------------
+r132 | lantianf@UTORONTO.CA | 2018-11-06 06:05:22 -0500 (Tue, 06 Nov 2018) | 1 line
+
+added java doc to the class pwd
+------------------------------------------------------------------------
+r131 | lantianf@UTORONTO.CA | 2018-11-06 06:05:07 -0500 (Tue, 06 Nov 2018) | 1 line
+
+added java doc to the class pushd
+------------------------------------------------------------------------
+r130 | lantianf@UTORONTO.CA | 2018-11-06 05:49:31 -0500 (Tue, 06 Nov 2018) | 1 line
+
+added java doc
+------------------------------------------------------------------------
+r129 | lantianf@UTORONTO.CA | 2018-11-06 05:42:07 -0500 (Tue, 06 Nov 2018) | 1 line
+
+added comment for echo
+------------------------------------------------------------------------
+r128 | lantianf@UTORONTO.CA | 2018-11-06 04:08:23 -0500 (Tue, 06 Nov 2018) | 1 line
+
+added some comments into Cat.java
+------------------------------------------------------------------------
+r127 | lantianf@UTORONTO.CA | 2018-11-06 04:05:11 -0500 (Tue, 06 Nov 2018) | 1 line
+
+Added some comments to File.java
+------------------------------------------------------------------------
+r126 | xujunxin@UTORONTO.CA | 2018-11-05 11:18:33 -0500 (Mon, 05 Nov 2018) | 1 line
+
+Fixed some bugs, added baisc level of exception handling, TODO: code style, testing
+------------------------------------------------------------------------
+r125 | lantianf@UTORONTO.CA | 2018-11-04 17:32:20 -0500 (Sun, 04 Nov 2018) | 1 line
+
+sprint for tianfanglan
+------------------------------------------------------------------------
+r124 | xujunxin@UTORONTO.CA | 2018-11-04 15:30:36 -0500 (Sun, 04 Nov 2018) | 1 line
+
+Added my sprint backlog
+------------------------------------------------------------------------
+r123 | daixian1@UTORONTO.CA | 2018-11-03 23:36:39 -0400 (Sat, 03 Nov 2018) | 1 line
+
+finish scrum meeting
+------------------------------------------------------------------------
+r122 | wangj398@UTORONTO.CA | 2018-11-03 23:34:14 -0400 (Sat, 03 Nov 2018) | 1 line
+
+submit sprint 3 on November 3
+------------------------------------------------------------------------
+r121 | xujunxin@UTORONTO.CA | 2018-11-03 15:12:18 -0400 (Sat, 03 Nov 2018) | 1 line
+
+Modified sprint3backlog
+------------------------------------------------------------------------
+r120 | daixian1@UTORONTO.CA | 2018-11-01 09:45:26 -0400 (Thu, 01 Nov 2018) | 1 line
+
+add 3rd backlog
+------------------------------------------------------------------------
+r119 | daixian1@UTORONTO.CA | 2018-11-01 01:15:08 -0400 (Thu, 01 Nov 2018) | 1 line
+
+add 4th scrum
+------------------------------------------------------------------------
+r118 | xujunxin@UTORONTO.CA | 2018-10-31 17:39:46 -0400 (Wed, 31 Oct 2018) | 1 line
+
+Added sprint backlog
+------------------------------------------------------------------------
+r117 | wangj398@UTORONTO.CA | 2018-10-30 21:45:54 -0400 (Tue, 30 Oct 2018) | 1 line
+
+commit the Sprint2 on Oct 27 and Oct 30
+------------------------------------------------------------------------
+r116 | lantianf@UTORONTO.CA | 2018-10-30 16:26:37 -0400 (Tue, 30 Oct 2018) | 1 line
+
+debug the create new file part
+------------------------------------------------------------------------
+r115 | lantianf@UTORONTO.CA | 2018-10-30 16:21:25 -0400 (Tue, 30 Oct 2018) | 1 line
+
+for now append method will start a new line
+------------------------------------------------------------------------
+r114 | wangj398@UTORONTO.CA | 2018-10-30 16:14:01 -0400 (Tue, 30 Oct 2018) | 1 line
+
+commit the first version of history
+------------------------------------------------------------------------
+r113 | lantianf@UTORONTO.CA | 2018-10-30 15:59:26 -0400 (Tue, 30 Oct 2018) | 1 line
+
+debug the echo
+------------------------------------------------------------------------
+r112 | daixian1@UTORONTO.CA | 2018-10-30 15:24:25 -0400 (Tue, 30 Oct 2018) | 1 line
+
+add Command Man to the Mapper
+------------------------------------------------------------------------
+r111 | wangj398@UTORONTO.CA | 2018-10-30 14:26:21 -0400 (Tue, 30 Oct 2018) | 1 line
+
+commit the first version of ls command
+------------------------------------------------------------------------
+r110 | lantianf@UTORONTO.CA | 2018-10-30 03:46:28 -0400 (Tue, 30 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r109 | lantianf@UTORONTO.CA | 2018-10-30 03:45:55 -0400 (Tue, 30 Oct 2018) | 1 line
+
+change the first character to Upper
+------------------------------------------------------------------------
+r108 | lantianf@UTORONTO.CA | 2018-10-30 03:45:13 -0400 (Tue, 30 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r107 | lantianf@UTORONTO.CA | 2018-10-30 03:45:01 -0400 (Tue, 30 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r106 | lantianf@UTORONTO.CA | 2018-10-30 03:44:21 -0400 (Tue, 30 Oct 2018) | 1 line
+
+finished the base code for Popd
+------------------------------------------------------------------------
+r105 | lantianf@UTORONTO.CA | 2018-10-30 03:41:39 -0400 (Tue, 30 Oct 2018) | 1 line
+
+finished the base code for pwd
+------------------------------------------------------------------------
+r104 | lantianf@UTORONTO.CA | 2018-10-30 03:31:00 -0400 (Tue, 30 Oct 2018) | 1 line
+
+finished base code for pushd
+------------------------------------------------------------------------
+r103 | wangj398@UTORONTO.CA | 2018-10-30 03:28:49 -0400 (Tue, 30 Oct 2018) | 1 line
+
+commit the Mkdir command 
+------------------------------------------------------------------------
+r102 | lantianf@UTORONTO.CA | 2018-10-30 03:15:37 -0400 (Tue, 30 Oct 2018) | 1 line
+
+Filetest do not import path anymore
+------------------------------------------------------------------------
+r101 | lantianf@UTORONTO.CA | 2018-10-30 03:12:35 -0400 (Tue, 30 Oct 2018) | 1 line
+
+finished the base code for man
+------------------------------------------------------------------------
+r100 | lantianf@UTORONTO.CA | 2018-10-30 03:04:24 -0400 (Tue, 30 Oct 2018) | 1 line
+
+finshed the base code for cat
+------------------------------------------------------------------------
+r99 | lantianf@UTORONTO.CA | 2018-10-30 03:04:11 -0400 (Tue, 30 Oct 2018) | 1 line
+
+finished the base code for echo
+------------------------------------------------------------------------
+r98 | wangj398@UTORONTO.CA | 2018-10-30 02:08:28 -0400 (Tue, 30 Oct 2018) | 1 line
+
+change type of error class
+------------------------------------------------------------------------
+r97 | wangj398@UTORONTO.CA | 2018-10-30 02:06:28 -0400 (Tue, 30 Oct 2018) | 2 lines
+
+commit cd command class
+
+------------------------------------------------------------------------
+r96 | lantianf@UTORONTO.CA | 2018-10-30 01:26:08 -0400 (Tue, 30 Oct 2018) | 1 line
+
+commit echo in order to edit on another pc.
+------------------------------------------------------------------------
+r95 | daixian1@UTORONTO.CA | 2018-10-29 23:19:54 -0400 (Mon, 29 Oct 2018) | 1 line
+
+fix a bug in Spliter.
+------------------------------------------------------------------------
+r94 | lantianf@UTORONTO.CA | 2018-10-29 23:14:51 -0400 (Mon, 29 Oct 2018) | 1 line
+
+change the command for Cat
+------------------------------------------------------------------------
+r93 | daixian1@UTORONTO.CA | 2018-10-29 23:13:59 -0400 (Mon, 29 Oct 2018) | 2 lines
+
+Put exit command in Mapper
+
+------------------------------------------------------------------------
+r92 | lantianf@UTORONTO.CA | 2018-10-29 23:13:49 -0400 (Mon, 29 Oct 2018) | 1 line
+
+finished the base code for command Cat
+------------------------------------------------------------------------
+r91 | wangj398@UTORONTO.CA | 2018-10-29 22:50:41 -0400 (Mon, 29 Oct 2018) | 2 lines
+
+add constructors of some class and add new command Exit
+
+------------------------------------------------------------------------
+r90 | daixian1@UTORONTO.CA | 2018-10-29 22:39:01 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Write JShell class and rewrite the main function
+------------------------------------------------------------------------
+r89 | daixian1@UTORONTO.CA | 2018-10-29 22:37:08 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Change package name to jshellcore
+------------------------------------------------------------------------
+r88 | daixian1@UTORONTO.CA | 2018-10-29 22:33:40 -0400 (Mon, 29 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r87 | daixian1@UTORONTO.CA | 2018-10-29 22:31:07 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Redo Mapper, using HashMap to store k-v pair. Redo Spliter, using regex. Delete Validator. Redo Spliter.
+------------------------------------------------------------------------
+r86 | lantianf@UTORONTO.CA | 2018-10-29 22:18:57 -0400 (Mon, 29 Oct 2018) | 1 line
+
+update the command interface, added method getDoc.
+------------------------------------------------------------------------
+r85 | wangj398@UTORONTO.CA | 2018-10-29 22:12:09 -0400 (Mon, 29 Oct 2018) | 1 line
+
+change package name of classes
+------------------------------------------------------------------------
+r84 | daixian1@UTORONTO.CA | 2018-10-29 22:10:32 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Change the package name to JshellCore
+------------------------------------------------------------------------
+r83 | lantianf@UTORONTO.CA | 2018-10-29 21:54:16 -0400 (Mon, 29 Oct 2018) | 1 line
+
+change the test file for file, since I change the instructor of the file.
+------------------------------------------------------------------------
+r82 | daixian1@UTORONTO.CA | 2018-10-29 21:51:42 -0400 (Mon, 29 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r81 | xujunxin@UTORONTO.CA | 2018-10-29 21:49:58 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Finished FileSystem and Directory, added methods isFile() and isExist(), integrated FileNode with teammate's File class
+------------------------------------------------------------------------
+r80 | lantianf@UTORONTO.CA | 2018-10-29 21:47:08 -0400 (Mon, 29 Oct 2018) | 1 line
+
+change the constructor of File.
+------------------------------------------------------------------------
+r79 | lantianf@UTORONTO.CA | 2018-10-29 21:20:52 -0400 (Mon, 29 Oct 2018) | 1 line
+
+sprint2 for tianfanglan
+------------------------------------------------------------------------
+r78 | wangj398@UTORONTO.CA | 2018-10-29 20:00:03 -0400 (Mon, 29 Oct 2018) | 2 lines
+
+commit first version of error
+
+------------------------------------------------------------------------
+r77 | lantianf@UTORONTO.CA | 2018-10-29 19:09:34 -0400 (Mon, 29 Oct 2018) | 1 line
+
+sprint for tianfanglan for oct27
+------------------------------------------------------------------------
+r76 | lantianf@UTORONTO.CA | 2018-10-29 19:07:18 -0400 (Mon, 29 Oct 2018) | 1 line
+
+changed the commend
+------------------------------------------------------------------------
+r75 | lantianf@UTORONTO.CA | 2018-10-29 16:50:31 -0400 (Mon, 29 Oct 2018) | 1 line
+
+change the output and input of the method excute.
+------------------------------------------------------------------------
+r74 | daixian1@UTORONTO.CA | 2018-10-29 09:47:13 -0400 (Mon, 29 Oct 2018) | 1 line
+
+add daily scrum
+------------------------------------------------------------------------
+r73 | daixian1@UTORONTO.CA | 2018-10-29 09:40:16 -0400 (Mon, 29 Oct 2018) | 1 line
+
+add some crccards
+------------------------------------------------------------------------
+r72 | xujunxin@UTORONTO.CA | 2018-10-28 01:12:56 -0400 (Sun, 28 Oct 2018) | 1 line
+
+Added sprint backlog on Oct 27
+------------------------------------------------------------------------
+r71 | xujunxin@UTORONTO.CA | 2018-10-28 00:53:22 -0400 (Sun, 28 Oct 2018) | 1 line
+
+Updated FileSystem
+------------------------------------------------------------------------
+r70 | xujunxin@UTORONTO.CA | 2018-10-24 11:49:50 -0400 (Wed, 24 Oct 2018) | 1 line
+
+Added methods push() and pop(), allows one to push current directory to a stack and pop back to it later on. Fully tested, all pass
+------------------------------------------------------------------------
+r69 | xujunxin@UTORONTO.CA | 2018-10-24 11:36:18 -0400 (Wed, 24 Oct 2018) | 2 lines
+
+Rewrite methods in FileSystem, it does not require to know if the given path is relative or absolute now, it can take both paths by the same method. Renamed methods to makeDir(), makeFile(), list(), and change()
+Also fixed test cases since the methods were renamed, the status is all pass
+------------------------------------------------------------------------
+r68 | xujunxin@UTORONTO.CA | 2018-10-24 00:08:57 -0400 (Wed, 24 Oct 2018) | 1 line
+
+Added a method in FileSystem that allows one to list files and directories by given relative path or absolute path. Wrote test cases for it, but still need more
+------------------------------------------------------------------------
+r67 | xujunxin@UTORONTO.CA | 2018-10-23 23:28:35 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Renamed sprint file
+------------------------------------------------------------------------
+r66 | daixian1@UTORONTO.CA | 2018-10-23 23:26:14 -0400 (Tue, 23 Oct 2018) | 1 line
+
+add Sprint2Backlot
+------------------------------------------------------------------------
+r65 | lantianf@UTORONTO.CA | 2018-10-23 23:17:27 -0400 (Tue, 23 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r64 | lantianf@UTORONTO.CA | 2018-10-23 23:17:18 -0400 (Tue, 23 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r63 | lantianf@UTORONTO.CA | 2018-10-23 23:16:02 -0400 (Tue, 23 Oct 2018) | 1 line
+
+sprint1 for tianfanglan
+------------------------------------------------------------------------
+r62 | daixian1@UTORONTO.CA | 2018-10-23 23:08:48 -0400 (Tue, 23 Oct 2018) | 1 line
+
+fix the name of the scrum meeting
+------------------------------------------------------------------------
+r61 | wangj398@UTORONTO.CA | 2018-10-23 23:01:37 -0400 (Tue, 23 Oct 2018) | 1 line
+
+commit sprint1 on October 23th
+------------------------------------------------------------------------
+r60 | daixian1@UTORONTO.CA | 2018-10-23 22:52:09 -0400 (Tue, 23 Oct 2018) | 1 line
+
+commit daily scrum meeting written by Xianghu Dai
+------------------------------------------------------------------------
+r59 | xujunxin@UTORONTO.CA | 2018-10-23 22:34:09 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Updated my sprint2
+------------------------------------------------------------------------
+r58 | lantianf@UTORONTO.CA | 2018-10-23 21:57:00 -0400 (Tue, 23 Oct 2018) | 1 line
+
+sprint2 for TianfangLan
+------------------------------------------------------------------------
+r57 | lantianf@UTORONTO.CA | 2018-10-23 21:52:00 -0400 (Tue, 23 Oct 2018) | 1 line
+
+debug the list to string
+------------------------------------------------------------------------
+r56 | lantianf@UTORONTO.CA | 2018-10-23 21:51:27 -0400 (Tue, 23 Oct 2018) | 1 line
+
+delete import the arraylist tool
+------------------------------------------------------------------------
+r55 | lantianf@UTORONTO.CA | 2018-10-23 21:50:28 -0400 (Tue, 23 Oct 2018) | 1 line
+
+change the order of expected and actual
+------------------------------------------------------------------------
+r54 | lantianf@UTORONTO.CA | 2018-10-23 21:23:14 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Debug the test file.
+------------------------------------------------------------------------
+r53 | lantianf@UTORONTO.CA | 2018-10-23 21:22:48 -0400 (Tue, 23 Oct 2018) | 1 line
+
+wrong name
+------------------------------------------------------------------------
+r52 | lantianf@UTORONTO.CA | 2018-10-23 21:03:55 -0400 (Tue, 23 Oct 2018) | 1 line
+
+finished test cases wait to be tested.
+------------------------------------------------------------------------
+r51 | lantianf@UTORONTO.CA | 2018-10-23 20:52:09 -0400 (Tue, 23 Oct 2018) | 1 line
+
+debug the method listToString
+------------------------------------------------------------------------
+r50 | lantianf@UTORONTO.CA | 2018-10-23 20:25:03 -0400 (Tue, 23 Oct 2018) | 1 line
+
+change the name of method "writeContent" to "overWrite"
+------------------------------------------------------------------------
+r49 | lantianf@UTORONTO.CA | 2018-10-23 19:35:53 -0400 (Tue, 23 Oct 2018) | 1 line
+
+create the test class for File.java
+------------------------------------------------------------------------
+r48 | lantianf@UTORONTO.CA | 2018-10-23 19:05:23 -0400 (Tue, 23 Oct 2018) | 1 line
+
+the interface of the command
+------------------------------------------------------------------------
+r47 | lantianf@UTORONTO.CA | 2018-10-23 18:20:54 -0400 (Tue, 23 Oct 2018) | 1 line
+
+finshed the file method, and will be tested
+------------------------------------------------------------------------
+r46 | lantianf@UTORONTO.CA | 2018-10-23 18:12:30 -0400 (Tue, 23 Oct 2018) | 1 line
+
+finished base code for method getContent and writeContent
+------------------------------------------------------------------------
+r45 | lantianf@UTORONTO.CA | 2018-10-23 14:27:22 -0400 (Tue, 23 Oct 2018) | 2 lines
+
+update the work so far.
+
+------------------------------------------------------------------------
+r44 | lantianf@UTORONTO.CA | 2018-10-23 11:57:42 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Change the name back to File.
+------------------------------------------------------------------------
+r43 | lantianf@UTORONTO.CA | 2018-10-23 11:55:23 -0400 (Tue, 23 Oct 2018) | 1 line
+
+delete the wrong code for fileloader
+------------------------------------------------------------------------
+r42 | lantianf@UTORONTO.CA | 2018-10-23 00:51:23 -0400 (Tue, 23 Oct 2018) | 1 line
+
+changed the way of store file, now the class will store the file in the form of list of string
+------------------------------------------------------------------------
+r41 | wangj398@UTORONTO.CA | 2018-10-23 00:38:54 -0400 (Tue, 23 Oct 2018) | 1 line
+
+commit the first version of the base code for CommandStatus, Input and Output classes
+------------------------------------------------------------------------
+r40 | lantianf@UTORONTO.CA | 2018-10-23 00:32:41 -0400 (Tue, 23 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r39 | lantianf@UTORONTO.CA | 2018-10-23 00:28:28 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Finished the base code for method reader in Fileloader. I changed the name of the File, since class name "File" will cause problem in import file.
+------------------------------------------------------------------------
+r38 | lantianf@UTORONTO.CA | 2018-10-22 22:29:03 -0400 (Mon, 22 Oct 2018) | 1 line
+
+update the file
+------------------------------------------------------------------------
+r37 | lantianf@UTORONTO.CA | 2018-10-22 21:59:36 -0400 (Mon, 22 Oct 2018) | 1 line
+
+finished the javadoc for the class File.
+------------------------------------------------------------------------
+r36 | xujunxin@UTORONTO.CA | 2018-10-22 18:01:26 -0400 (Mon, 22 Oct 2018) | 1 line
+
+Finished FileSystem, including the feature that .. represents parent folder and . represents current folder, fully tested
+------------------------------------------------------------------------
+r35 | xujunxin@UTORONTO.CA | 2018-10-22 17:18:18 -0400 (Mon, 22 Oct 2018) | 1 line
+
+Added preprocessing in Path
+------------------------------------------------------------------------
+r34 | xujunxin@UTORONTO.CA | 2018-10-22 16:31:02 -0400 (Mon, 22 Oct 2018) | 2 lines
+
+Added PathPreprocessor that modify path to the correct form, replace . and .. to explicit path, also added test cases for it:
+
+------------------------------------------------------------------------
+r33 | daixian1@UTORONTO.CA | 2018-10-21 18:14:09 -0400 (Sun, 21 Oct 2018) | 1 line
+
+change package name of jshellloop
+------------------------------------------------------------------------
+r32 | daixian1@UTORONTO.CA | 2018-10-21 18:04:23 -0400 (Sun, 21 Oct 2018) | 1 line
+
+fix some bugs
+------------------------------------------------------------------------
+r31 | daixian1@UTORONTO.CA | 2018-10-21 17:30:42 -0400 (Sun, 21 Oct 2018) | 1 line
+
+finish basic code of the loop of jshell
+------------------------------------------------------------------------
+r30 | xujunxin@UTORONTO.CA | 2018-10-21 17:03:20 -0400 (Sun, 21 Oct 2018) | 1 line
+
+Finished test cases for FileSystem
+------------------------------------------------------------------------
+r29 | xujunxin@UTORONTO.CA | 2018-10-21 16:25:03 -0400 (Sun, 21 Oct 2018) | 1 line
+
+Done basic features of FileSystem, next step is to write test cases for it
+------------------------------------------------------------------------
+r28 | xujunxin@UTORONTO.CA | 2018-10-21 16:05:31 -0400 (Sun, 21 Oct 2018) | 1 line
+
+Updated test cases for Directory
+------------------------------------------------------------------------
+r27 | xujunxin@UTORONTO.CA | 2018-10-21 16:00:09 -0400 (Sun, 21 Oct 2018) | 1 line
+
+Created parent class Node, which is parent for FileNode and DirectoryNode, added test cases for these classes
+------------------------------------------------------------------------
+r26 | xujunxin@UTORONTO.CA | 2018-10-21 01:25:25 -0400 (Sun, 21 Oct 2018) | 1 line
+
+Finished Path,RelativePath and part of the Directory, and also added test cases for these classes
+------------------------------------------------------------------------
+r25 | xujunxin@UTORONTO.CA | 2018-10-20 22:51:38 -0400 (Sat, 20 Oct 2018) | 1 line
+
+Added my sprint, finished DirectoryNode class and wrote test cases for it, next step is to start implmenting tree
+------------------------------------------------------------------------
+r24 | daixian1@UTORONTO.CA | 2018-10-20 22:27:19 -0400 (Sat, 20 Oct 2018) | 1 line
+
+add xianghuDai daily scrum
+------------------------------------------------------------------------
+r23 | lantianf@UTORONTO.CA | 2018-10-20 21:00:25 -0400 (Sat, 20 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+r22 | wangj398@UTORONTO.CA | 2018-10-20 20:30:14 -0400 (Sat, 20 Oct 2018) | 1 line
+
+commit the Sprint1October20
+------------------------------------------------------------------------
+r21 | xujunxin@UTORONTO.CA | 2018-10-20 19:32:25 -0400 (Sat, 20 Oct 2018) | 1 line
+
+Added methods with docuemnt for DirectoryNode class
+------------------------------------------------------------------------
+r20 | xujunxin@UTORONTO.CA | 2018-10-20 19:09:53 -0400 (Sat, 20 Oct 2018) | 1 line
+
+Working on FileSystem, Directory and DirectoryNode, finished writing descriptions for them
+------------------------------------------------------------------------
+r19 | daixian1@UTORONTO.CA | 2018-10-17 23:07:16 -0400 (Wed, 17 Oct 2018) | 1 line
+
+revise the sprint1Backlog
+------------------------------------------------------------------------
+r18 | daixian1@UTORONTO.CA | 2018-10-17 21:51:48 -0400 (Wed, 17 Oct 2018) | 1 line
+
+fixed a grammer mistake
+------------------------------------------------------------------------
+r17 | daixian1@UTORONTO.CA | 2018-10-17 21:48:03 -0400 (Wed, 17 Oct 2018) | 1 line
+
+revise the product backlog
+------------------------------------------------------------------------
+r16 | daixian1@UTORONTO.CA | 2018-10-17 21:42:19 -0400 (Wed, 17 Oct 2018) | 1 line
+
+upload the revised product backlog
+------------------------------------------------------------------------
+r15 | xujunxin@UTORONTO.CA | 2018-10-17 13:29:04 -0400 (Wed, 17 Oct 2018) | 1 line
+
+Added Sprint1Backlog.txt, start doing first stage
+------------------------------------------------------------------------
+r14 | wangj398@UTORONTO.CA | 2018-10-17 10:39:48 -0400 (Wed, 17 Oct 2018) | 1 line
+
+commit personal(Daniel_wang) version of user stories
+------------------------------------------------------------------------
+r13 | daixian1@UTORONTO.CA | 2018-10-17 10:28:48 -0400 (Wed, 17 Oct 2018) | 1 line
+
+renew ProductBacklog wrote by Xianghu
+------------------------------------------------------------------------
+r11 | daixian1@UTORONTO.CA | 2018-10-17 09:56:11 -0400 (Wed, 17 Oct 2018) | 1 line
+
+add ProductBacklog wrote by Xianghu
+------------------------------------------------------------------------
+r10 | xujunxin@UTORONTO.CA | 2018-10-16 22:32:54 -0400 (Tue, 16 Oct 2018) | 1 line
+
+Daniel Xu's backlog submitted, we will submit one backlog for each person and compare all of them
+------------------------------------------------------------------------
+r9 | lantianf@UTORONTO.CA | 2018-10-16 21:43:22 -0400 (Tue, 16 Oct 2018) | 1 line
+
+have my own userstories, and will do further discuss with team mates
+------------------------------------------------------------------------
+r7 | attarwal@UTORONTO.CA | 2018-10-15 18:06:16 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r6 | attarwal@UTORONTO.CA | 2018-10-15 18:06:15 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r5 | attarwal@UTORONTO.CA | 2018-10-15 18:06:15 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r4 | attarwal@UTORONTO.CA | 2018-10-15 18:06:14 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r3 | attarwal@UTORONTO.CA | 2018-10-15 18:06:13 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r2 | attarwal@UTORONTO.CA | 2018-10-15 18:06:13 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r1 | Markus | 2018-10-14 15:26:02 -0400 (Sun, 14 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+
+
+
+Part 3) +++Work Distribution of Team Members+++
++++ON ALL SOURCE FILES+++
+  21 attarwal@U
+ 588 daixian1@U
+ 846 lantianf@U
+ 879 wangj398@U
+2730 xujunxin@U
++++ON CRC CARDS+++
+   9 attarwal@U
+  39 daixian1@U
+  91 lantianf@U
+  78 wangj398@U
+  71 xujunxin@U
++++ON DAILYSCRUMMEETINGS+++
+  41 attarwal@U
+  88 daixian1@U
+  76 lantianf@U
+  83 wangj398@U
+  69 xujunxin@U
++++ON PRODUCT BACKLOG +++
+  11 attarwal@U
+  70 daixian1@U
++++ON SPRINTS+++
+  68 attarwal@U
+ 145 daixian1@U
+   1 lantianf@U
+   1 wangj398@U
+  14 xujunxin@U
+2389
+Part 4) SVN Commits
+
+
+On Sprints
+   1  attarwal@UTORONTO.CA 
+   7  daixian1@UTORONTO.CA 
+   1  lantianf@UTORONTO.CA 
+   1  wangj398@UTORONTO.CA 
+   3  xujunxin@UTORONTO.CA 
+
+
+On CRC Cards
+   1  attarwal@UTORONTO.CA 
+   3  daixian1@UTORONTO.CA 
+   3  lantianf@UTORONTO.CA 
+   2  wangj398@UTORONTO.CA 
+   1  xujunxin@UTORONTO.CA 
+
+
+On DailyScrumMeetings
+   1  attarwal@UTORONTO.CA 
+  11  daixian1@UTORONTO.CA 
+  13  lantianf@UTORONTO.CA 
+   9  wangj398@UTORONTO.CA 
+   8  xujunxin@UTORONTO.CA 
+
+
+On ProductBacklog
+   1  attarwal@UTORONTO.CA 
+   6  daixian1@UTORONTO.CA 
+   1  lantianf@UTORONTO.CA 
+   1  wangj398@UTORONTO.CA 
+   1  xujunxin@UTORONTO.CA 
+
+
+On source
+   1  attarwal@UTORONTO.CA 
+  36  daixian1@UTORONTO.CA 
+  77  lantianf@UTORONTO.CA 
+  32  wangj398@UTORONTO.CA 
+  31  xujunxin@UTORONTO.CA 

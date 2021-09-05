@@ -1,0 +1,9 @@
+Class name: Ls
+
+Responsibilities:
+* Print the contents of the given path
+
+Collaborators:
+Command
+NotExistException
+FileSystem

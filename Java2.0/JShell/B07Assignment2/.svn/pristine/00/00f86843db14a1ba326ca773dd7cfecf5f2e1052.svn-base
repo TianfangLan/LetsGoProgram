@@ -1,0 +1,17 @@
+package jshell.files;
+
+/** The class File. The class will read the file and store the whole
+ *  file into the class in the form of array strings. The class contains
+ *  a <code>path</code> to point which file will be open or operated. <br>
+ *  The class File is used to solve the write, append and get content
+ *  problems.
+ *
+ * @author tianfang Lan
+ */
+public class File {
+  private Path path;
+  public File{
+    
+  }
+
+}

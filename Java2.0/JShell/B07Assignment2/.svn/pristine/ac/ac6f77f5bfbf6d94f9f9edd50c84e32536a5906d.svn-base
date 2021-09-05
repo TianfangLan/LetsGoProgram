@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+    - finish mkdir and cd command class
+	- create base code of ls and history command class
+What do I plan to work in the next three days?
+    - fix the ls and history command class
+
+Am I blocked on anything?
+    - try to change String<path> to become a Path
+    - Need to rebuild the input class before continue the history class

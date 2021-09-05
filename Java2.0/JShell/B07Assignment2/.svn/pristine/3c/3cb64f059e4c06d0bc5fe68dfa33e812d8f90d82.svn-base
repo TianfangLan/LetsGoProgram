@@ -1,0 +1,10 @@
+Class name: FileNode
+
+Responsibilities:
+*A node representation of a file
+
+Parent:
+*Node
+
+Collaborators:
+*Directory

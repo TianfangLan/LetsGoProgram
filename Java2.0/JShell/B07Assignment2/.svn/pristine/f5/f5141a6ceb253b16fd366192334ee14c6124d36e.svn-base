@@ -1,0 +1,28 @@
+// **********************************************************
+// Assignment2:
+// Student1: Tianfang Lan
+// UTORID user_name:lantianf
+// UT Student #: 1002687210
+// Author: Tianfang Lan
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC B07 and understand the consequences.
+// *********************************************************
+package jshell.exceptions;
+
+/**
+ * this is the error will raised if a parent node is a file node
+ * 
+ * @author lan erbao
+ *
+ */
+public class InvalidParentNode extends RuntimeException {
+
+  public InvalidParentNode(String err) {
+    super(err);
+  }
+}

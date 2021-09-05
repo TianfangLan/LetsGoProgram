@@ -1,0 +1,29 @@
+package jshell.jshellcore;
+
+import jshell.files.Directory;
+import jshell.files.FileSystem;
+import jshell.files.Path;
+
+public class Ls implements Command{
+
+  @Override
+  public void excute(String input) {
+    // TODO Auto-generated method stub
+    String[] output;
+    if(input.equals(" ")) {
+      output = FileSystem.getSystem().list();
+    }else {
+      output = FileSystem.getSystem().list(input);
+    }
+    for(String out : output) {
+      System.out.println(out);
+    }
+  }
+
+  @Override
+  public String getDoc() {
+    // TODO Auto-generated method stub
+    return "Command ls<path> to print the contents of the ";
+  }
+
+}

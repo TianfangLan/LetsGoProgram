@@ -1,0 +1,22 @@
+package jshell.jshellcore;
+
+import jshell.files.FileSystem;
+
+public class Echo implements Command{
+	private Input input = new Input();
+	private Output output = new Output();
+	@Override
+	public void excute(String arg) {
+		this.input.SetInputContent(arg);
+		if (arg.contains(">>")){
+			String
+		}
+
+	@Override
+	public String getDoc() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

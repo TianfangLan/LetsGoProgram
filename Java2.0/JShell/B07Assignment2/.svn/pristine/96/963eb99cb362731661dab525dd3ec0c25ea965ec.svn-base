@@ -1,0 +1,27 @@
+package jshell.jshellcore;
+
+import jshell.exceptions.NotExistException;
+import jshell.files.FileSystem;
+
+public class Mkdir implements Command{
+
+  @Override
+  public void excute(String input) {
+    String[] paths = input.split("\\s+");
+    for(String path : paths) {
+    	try {
+    		FileSystem.getSystem().makeDir(path);
+    	}
+        catch(NotExistException e) {
+        	System.err.println("mkdir: "+e.getMessage());
+        }
+    }
+
+  }
+
+  @Override
+  public String getDoc() {
+    return "Command mkdir<br> to create directories";
+  }
+
+}

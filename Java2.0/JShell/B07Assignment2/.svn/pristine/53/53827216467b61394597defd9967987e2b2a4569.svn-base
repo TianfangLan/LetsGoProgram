@@ -1,0 +1,9 @@
+package jshell.jshellloop;
+
+public class Prompter {
+
+	
+	public void pirntPrompt() {
+		System.out.print("/: ");
+	}
+}

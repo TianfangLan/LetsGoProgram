@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+    - finish base code of CommandStatus and Input
+    - finish base code of Output and Error
+What do I plan to work in the next three days?
+    - Add case of Error
+    - 
+
+Am I blocked on anything?
+    - Need to find out the additional case of error 

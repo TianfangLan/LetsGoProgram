@@ -1,0 +1,270 @@
+// **********************************************************
+// Assignment2:
+// Student1: Junxing Xu
+// UTORID user_name:xujunxin
+// UT Student #: 1004019028
+// Author: Junxing Xu
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC B07 and understand the consequences.
+// *********************************************************
+package jshell.files;
+
+import java.util.List;
+
+/**
+ * Directory, can be represented by ways to travel {@link DirectoryNode}. For
+ * instance, if node 'root' has children 'usr' and 'bin', 'root/usr' can be a
+ * way travel from node root to node usr. And 'root/bin' can be a way travel
+ * from node root to node bin. There is a node with empty string represents the
+ * root node, therefore, the root node is consistant and always has an empty
+ * string, which is not allowed for other nodes.
+ * 
+ * @author danielxu
+ *
+ */
+public class Directory {
+
+  /** The root node **/
+  private Node root;
+  /** A pointer to the current node **/
+  private Node cur;
+
+  /**
+   * Construct a Directory, with a default root {@link DirectoryNode} with name
+   * ''.
+   */
+  public Directory() {
+    /*
+     * Root node is the node with name '' and have no parent since it is on top
+     * of every node.
+     */
+    root = new DirectoryNode("", null);
+    cur = root;
+  }
+
+  /**
+   * Move the current pointer to its parent, if the parent is null, i.e it is
+   * the root node already, error might occur
+   */
+  public void back() {
+    // TODO error checking
+    cur = cur.getParent();
+  }
+
+  /**
+   * Change the current pointer to a new node by given path, which can be
+   * relative or absolute.
+   * 
+   * @param path Path to the node that will be the new current pointer
+   */
+  public void change(Path p) {
+    cur = getByPath(p);
+  }
+
+  /**
+   * Change the current pointer to the root directory
+   */
+  public void toRoot() {
+    cur = root;
+  }
+
+  /**
+   * Get a {@link File} by path
+   * 
+   * @param p Path to the file
+   * @return The file
+   */
+  public File getFile(Path p) {
+    Node n = getByPath(p);
+    if (n.isFile()) {
+      return ((FileNode) n).getFile();
+    }
+    // TODO raise error
+    return null;
+  }
+
+  /**
+   * Append a {@link DirectoryNode} by given path.
+   * 
+   * @param path Path of the newly create node
+   */
+  public void append(Path p) {
+    Node parent = getByPath(p.getParent());
+    if (parent.isFile()) {
+      // // TODO raise error
+    } else {
+      ((DirectoryNode) parent).addChild(new DirectoryNode(p.getName(), parent));
+    }
+  }
+
+  /**
+   * Append a {@link FileNode} by given path.
+   * 
+   * @param p Path of the newly create node
+   */
+  public void appendf(Path p) {
+    // TODO error checking
+    Node parent = getByPath(p.getParent());
+    if (parent.isFile()) {
+      // TODO raise error
+    } else {
+      ((DirectoryNode) parent).addChild(new FileNode(p.getName(), parent));
+    }
+  }
+
+  
+  //---------------------------------
+// new for the mv
+
+  public void move(Path item, Path goal) {
+    // get the new parent Node
+    Node newparent = getByPath(goal);
+    // get the old parent Node
+    Node oldparent = getByPath(item.getParent());
+    if (newparent.isFile()) {
+      // TODO error checking
+    } else {
+      // get the item Node(item could be file or directory node)
+      Node itemnode = getByPath(item);
+   // delete the item in the old parent.
+      ((DirectoryNode) oldparent).deleteChild(itemnode);
+      // set the itemnode's parent to the new parent.
+      itemnode.setParent(newparent);
+      // add the item to the goal path.(item could be file or directory node)
+      ((DirectoryNode) newparent).addChild(itemnode);
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
+  /**
+   * Get a list of children by given path
+   * 
+   * @param p {@link} Path to the directory
+   * @return List of {@link Node} can be {@link DirectoryNode} or
+   *         {@link FileNode}
+   */
+  public List<Node> list(Path p) {
+    Node n = getByPath(p);
+    return n.getChildren();
+  }
+
+  /**
+   * Get a list of children that current pointer has
+   * 
+   * @return List of {@link Node} can be {@link DirectoryNode} or
+   *         {@link FileNode}
+   */
+  public List<Node> list() {
+    return cur.getChildren();
+  }
+
+  /**
+   * Get the absolute path of the current pointer, i.e the working directory.
+   * The format will be like: /a/b/c, where c is the current working directory.
+   * 
+   * @return Absolute path of current pointer in {@link Path}
+   */
+  public Path getCurPath() {
+    return reverseTravel(cur);
+  }
+
+  /**
+   * Get a boolean that tell if directory or file with given path exists in the
+   * file system.
+   * 
+   * @param path {@link Path} to the diretcory/file
+   * @return True if does exist, false otherwise
+   */
+  public boolean isExist(Path p) {
+    return getByPath(p) != null;
+  }
+
+  /**
+   * Get a boolean value that tells if the given path pointing to a file or a
+   * directory
+   * 
+   * @param path {@link Path} to the diretcory/file
+   * @return True if it is a file, false otherwise
+   */
+  public boolean isFile(Path p) {
+    return getByPath(p).isFile();
+  }
+
+
+  /*
+   * Reverse travel, from a child node to its parent to construct a path.
+   */
+  private Path reverseTravel(Node n) {
+    Node c = n;
+    StringBuilder sb = new StringBuilder();
+    /*
+     * While current node is not null, stores its name and travel backward by
+     * accessing the parent
+     */
+    if (n == root) {
+      return new Path("/");
+    }
+    while (c != null) {
+      sb.insert(0, c.getName());
+      if (c != root) {
+        sb.insert(0, "/");
+      }
+      c = c.getParent();
+    }
+    return new Path(sb.toString());
+  }
+
+  /*
+   * Get DirectoryNode by a path, remember that there is some cases that the
+   * path does not exist
+   */
+  private Node getByPath(Path p) {
+    String[] nodeNames = p.toString().split("/");
+    // Start searching from root
+    Node n = root;
+    for (int i = 1; i < nodeNames.length; i++) {
+      Node temp = n.getChild(nodeNames[i]);
+      if (temp != null) {
+        n = temp;
+      } else {
+        return null;
+      }
+    }
+    return n;
+  }
+
+  /**
+   * This is a debug method and will be removed. Print the tree from the root
+   */
+  public void debug() {
+    travel(root);
+  }
+
+  private void travel(Node n) {
+    if (n == null) {
+      return;
+    }
+    if (!n.isFile()) {
+      DirectoryNode d = (DirectoryNode) n;
+      List<Node> c = d.getChildren();
+      for (Node node : c) {
+        System.out
+            .print(n.getName() + " has child => " + node.getName() + "\t");
+      }
+      System.out.println();
+      for (Node node : c) {
+        travel(node);
+      }
+    }
+  }
+}

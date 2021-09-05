@@ -1,0 +1,10 @@
+Class name: Mv
+
+Responsibilities:
+*Move the item at oldpath to the newpath
+
+Collaborators:
+*Commands
+*Output
+*FileSystem
+*NotExistException

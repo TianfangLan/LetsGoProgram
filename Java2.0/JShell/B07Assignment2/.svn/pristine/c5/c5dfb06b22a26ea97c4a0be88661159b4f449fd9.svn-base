@@ -1,0 +1,24 @@
+Backlog item						Estimate
+
+Allow users to redirect output of every command		3 days
+
+Allow users to list all subdirectories			2 days
+
+Allow users to move item				1 day
+
+Allow users to copy item 				1 day
+
+Allow users to retrieve the file at the URL
+and add it to the current working directory		2 days
+
+Allow users to save the current status of the
+mock file system into a file in the real file system
+
+Allow users to load the file system status from		2 days
+a file saved in the real file system
+
+Allow users to find a file by its name			1 day
+
+Allow users to display the entire file system as	2 days
+a tree
+

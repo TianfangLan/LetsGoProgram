@@ -1,0 +1,10 @@
+Class name: Get
+
+Responsibilities:
+*get the file from the URL, and create a file inside current directory with the content in it.
+
+Collaborators:
+*Commands
+*file
+*FileSystem
+*Output

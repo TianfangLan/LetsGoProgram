@@ -1,0 +1,14 @@
+package jshell.jshellloop;
+
+public class Output {
+    
+  private String outputcontent;
+    
+    public void SetOutputContent(String content) {
+      this.outputcontent = content;
+    }
+    
+    public String GetOutput() {
+      return this.outputcontent;
+    }
+}

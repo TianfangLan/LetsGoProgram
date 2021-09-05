@@ -1,0 +1,6 @@
+Interface name: Command
+
+Responsibilities:
+*Every class implments Command should have excute and getDoc.
+
+Collaborators:

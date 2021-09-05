@@ -1,0 +1,10 @@
+Class name: Directory
+
+Responsibilities:
+*A tree representation of directories
+
+Collaborators:
+*FileSystem
+*DirectoryNode
+*Node
+*FileNode

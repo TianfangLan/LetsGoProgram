@@ -1,0 +1,8 @@
+Class name: Node
+
+Responsibilities:
+*A node of a directory tree, abstract class
+
+Children:
+*DirectoryNode
+*FileNode

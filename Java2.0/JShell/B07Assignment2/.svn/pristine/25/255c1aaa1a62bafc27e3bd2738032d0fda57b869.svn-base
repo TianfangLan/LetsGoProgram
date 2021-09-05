@@ -1,0 +1,9 @@
+Class name: Mkdir
+
+Responsibilities:
+*Create a new directory 
+
+Collaborators:
+Command
+NotExistException
+FileSystem

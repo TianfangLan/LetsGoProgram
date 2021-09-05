@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+	- fix the core of JShell
+	- fixed some bugs
+
+What do I plan to work in the next three days?
+	
+
+Am I blocked on anything?
+	- nothing so far

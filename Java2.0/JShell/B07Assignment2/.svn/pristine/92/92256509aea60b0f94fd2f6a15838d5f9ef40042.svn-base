@@ -1,0 +1,21 @@
+package jshell.jshellcore;
+
+public class CommandStatus {
+    private String commandStauts;
+    
+    public CommandStatus(String command) {
+      
+    }
+    
+    public  void SetGoodStatus() {
+      this.commandStauts = "Good";
+    }
+    
+    public void SetBadStatus() {
+       this.commandStauts = "Bad";
+    }
+    
+    public String GetCommandStatus() {
+      return this.commandStauts;
+    }
+}

@@ -1,0 +1,35 @@
+//**********************************************************
+//Assignment2:
+//Student1: Tianfang Lan
+//UTORID user_name:lantianf
+//UT Student #: 1002687210
+//Author: Tianfang Lan
+//
+//
+//Honor Code: I pledge that this program represents my own
+//program code and that I have coded on my own. I received
+//help from no one in designing and debugging my program.
+//I have also read the plagiarism section in the course info
+//sheet of CSC B07 and understand the consequences.
+//*********************************************************
+package jshell.jshellcore;
+
+/***
+ * Every Command should have the excute, getDoc and getOutput method.
+ * 
+ * @author lan tianfang
+ * @author Xianghu Dai
+ *
+ */
+public interface Command {
+
+  // every command will excute and do not return anything.
+  public void excute(String input);
+
+  // every command should getdoc, should return the document of the command
+  public String getDoc();
+  
+  // people should be able to get the output of every command
+  public String getOutput();
+
+}

@@ -1,0 +1,51 @@
+package jshell.jshellcore.command;
+
+import jshell.exceptions.NotExistException;
+import jshell.files.FileSystem;
+import jshell.jshellcore.Command;
+import jshell.jshellcore.Output;
+
+/***
+ * The class is the command move, it will move the item OLDPATH to NEWPATH.
+ * 
+ * @author lan tianfang
+ *
+ */
+public class Mv implements Command{
+  /** output is the output object store output */
+  private Output output = new Output();
+  
+  
+  @Override
+  public void excute(String input) {
+    // split the input into 2.
+    String[] paths = input.split("\\s+", 2);
+    // first part is the oldpath and second is the newpath with no whitespace.
+    String oldpath = paths[0];
+    String newpath = paths[1].replaceAll("\\s+", "");
+    try {
+      if(FileSystem.getSystem().exist(oldpath)
+          && FileSystem.getSystem().exist(newpath)) {
+        FileSystem.getSystem().moveDir(oldpath, newpath);
+      }
+      
+    }
+    catch (NotExistException e) {
+      System.err.println("echo: " + e.getMessage());
+    }
+
+  }
+
+  @Override
+  public String getDoc() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getOutput() {
+    // TODO Auto-generated method stub
+    return output.GetOutput();
+  }
+
+}

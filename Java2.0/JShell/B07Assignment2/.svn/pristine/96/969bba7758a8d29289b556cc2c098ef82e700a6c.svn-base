@@ -1,0 +1,36 @@
+Nov 19 - Nov 26
+
+User Stories from Product Backlog that we will address in this sprint:
+a) As a user, I need to redirect the output to a file
+b) As a user, I want to copy files
+c) As a user, I want to move files
+d) As a user, I want to save the status of the filesystem
+
+Specific tasks to be accomplished:
+a-1. (Redirection) create Redirection Interface
+a-2. (RedirectOutput) create RedirectOutput class
+a-3. (Command) give Command interface and every command a method: getOutput()
+a-4. (Command) revise every command to save the output of every command as an instance attribute
+a-5. (Spliter) reivse Spliter class to make it be able to split command with Redirection
+a-6. (Mapper) add new commands to Mapper 
+b-1. (cp) create the cp command
+c-1. (mv) create the mv command
+c-2. (cat) change the command cat to make it can read several files with valid path.
+c-3. (fileSystem) change the fileSystem to make mv command faster and easier
+c-4. (get) finish the get URL command.
+d-1. (save) create the save command
+d-2. (save) interact save command with FileSystem
+d-3. (Redirection) implements redirection in FileSystem
+
+
+User: Xianghu Dai
+Tasks: a-1, a-2, a-3, a-4, a-5, a-6
+
+User: Junxing Xu
+Tasks: b-1, d-2, d-3
+
+User: Tianfang Lan
+Tasks: c-1, c-2, c-3, c-4
+
+User: Jiahong Wang
+Tasks: d-1

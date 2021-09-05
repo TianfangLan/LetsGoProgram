@@ -1,0 +1,6 @@
+Class name: Input
+
+Responsibilities:
+* Store the input message
+
+Collaborators:

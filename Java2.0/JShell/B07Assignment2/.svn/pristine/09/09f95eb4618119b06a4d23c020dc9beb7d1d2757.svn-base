@@ -1,0 +1,37 @@
+package jshell.files;
+
+import java.util.List;
+
+/** The class File. The class will read the file and store the whole
+ *  file into the class in the form of array strings. The class contains
+ *  a <code>path</code> to point which file will be open or operated. <br>
+ *  The class File is used to solve the write, append and get content
+ *  problems.
+ *
+ * @author tianfang Lan
+ */
+public class File {
+  private Path path;
+  private List<String> file;
+  /** for create a File the path of the file is required
+   * 
+   * @param load is a String represent the path of the file.
+   */
+  public File(Path load){
+    path = load;
+  }
+
+
+  /** reader will read the file at the input <code>Path</code>
+   * then store the file into the <code>file</code> in the class.
+   */
+  public List<String> getFile(){
+    return file;
+  }
+
+   
+  public void readFile() {
+    
+  }
+
+}

@@ -1,0 +1,15 @@
+package jshell.exceptions;
+
+/**
+ * This exception will be thrown when trying to get to a
+ * file or directory that does not exist.
+ * @author danielxu
+ *
+ */
+public class NotExistException extends RuntimeException{
+
+	public NotExistException(String err) {
+		super(err);
+	}
+	
+}

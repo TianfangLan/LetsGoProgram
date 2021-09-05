@@ -1,0 +1,24 @@
+package jshell.jshellcore;
+import jshell.exceptions.NotExistException;
+import jshell.files.FileSystem;
+
+public class Cd implements Command{
+
+	@Override
+	public void excute(String input) {
+		// TODO Auto-generated method stub
+		try {
+			FileSystem.getSystem().change(input);
+		}
+		catch(NotExistException e) {
+			System.err.println("cd: "+e.getMessage());
+		}
+	}
+
+	@Override
+	public String getDoc() {
+		// TODO Auto-generated method stub
+		return "Command cd <dir> to change the current working directory to <dir>";
+	}
+
+}

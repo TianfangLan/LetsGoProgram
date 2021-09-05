@@ -1,0 +1,31 @@
+package jshell.jshellcore;
+
+import jshell.files.FileSystem;
+
+/***
+ * The class pwd is a command and will print the current working directory.
+ * 
+ * @author lan tianfang
+ *
+ */
+public class Pwd implements Command {
+
+  /**
+   * the method excute will print the current directory
+   * 
+   * @param the input arg could be any string
+   */
+  @Override
+  public void excute(String arg) {
+    System.out.println(FileSystem.getSystem().getCur());
+  }
+
+  /**
+   * getDoc is suppose to get the documentation of the class
+   */
+  @Override
+  public String getDoc() {
+    return "Print the path of current working directory";
+  }
+
+}

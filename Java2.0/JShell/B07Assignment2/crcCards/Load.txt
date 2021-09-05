@@ -1,0 +1,9 @@
+Class name: Load
+
+Responsibilities:
+*load the saved session of JShell from file
+
+Collaborators:
+NotExistException
+*Mapper
+*Spliter

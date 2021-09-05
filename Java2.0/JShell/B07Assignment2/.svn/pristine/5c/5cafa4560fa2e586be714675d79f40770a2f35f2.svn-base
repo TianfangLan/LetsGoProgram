@@ -1,0 +1,68 @@
+// **********************************************************
+// Assignment2:
+// Student3: Jiahong Wang
+// UTORID user_name: wangj398
+// UT Student #: 1002695933
+// Author: Jiahong Wang
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC B07 and understand the consequences.
+// *********************************************************
+package jshell.jshellcore.command;
+
+import java.util.ArrayList;
+import java.util.List;
+import jshell.jshellcore.Command;
+
+/***
+ * the class store all the command, and return the when it been called
+ * 
+ * @author Jiahong Wang
+ * @author danielxu
+ * @param null or number of commands tried to print
+ *
+ */
+public class History implements Command {
+  private List<String> command;
+
+  public History() {
+    command = new ArrayList<String>();
+  }
+
+  public void add(String input) {
+    command.add(input);
+  }
+
+  @Override
+  public void excute(String input) {
+    // TODO Auto-generated method stub
+    if (input.equals("")) {
+      printout(command.size());
+    } else {
+      printout(Integer.parseInt(input));
+    }
+  }
+
+  public void printout(int number) {
+    if (number >= command.size()) {
+      number = command.size();
+    }
+    for (int index = command.size() - number; index < command.size(); index++) {
+      System.out.println(command.get(index));
+    }
+  }
+
+  @Override
+  public String getDoc() {
+    // TODO Auto-generated method stub
+    return "Command history <int> to print out recent <int> command, "
+        + " if <int> is not given or <int> is greater than the number of"
+        + "commands, all the commands will be displayed. If <int> is"
+        + "less than or equal 0, nothing will be displayed.";
+  }
+
+}

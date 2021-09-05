@@ -1,0 +1,61 @@
+package jshell.files;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+
+/** The class File. The class will read the file and store the whole
+ *  file into the class in the form of array strings. The class contains
+ *  a <code>path</code> to point which file will be open or operated. <br>
+ *  The class File is used to solve the write, append and get content
+ *  problems.
+ *
+ * @author tianfang Lan
+ */
+public class Fileloader {
+  private String loadpath;
+  private List<String> file;
+  /** for create a File the path of the file is required
+   * 
+   * @param load is a String represent the path of the file.
+   */
+  public Fileloader(String load){
+    /* path is a String and in the path class, call toString method
+     * to get the file path.
+    */
+    loadpath = load.toString();
+  }
+  
+  /** reader will read the file at the input <code>Path</code>
+   * then store the file into the file in the class.
+   * 
+   */
+  public void reader() {
+    // read the target file
+    File target = new File(loadpath);
+    BufferedReader reader = null;
+    try {
+      reader = new BufferedReader(new FileReader(target));
+      // temp is the temporary line of the file
+      String temp = null;
+      while ((temp = reader.readLine())!= null) {
+        file.add(temp);
+      }
+      reader.close();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    finally {
+      if (reader != null) {
+        try {
+          reader.close();
+        } catch (IOException e) {
+          
+        }
+      }
+    }
+  }
+
+}

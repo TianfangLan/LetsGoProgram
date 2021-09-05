@@ -1,0 +1,12 @@
+Class name: Echo
+
+Responsibilities:
+* the Echo contains 2 ways to edit a file. Append, overwrite, and if the input
+pass does not exist, it will create a new file. If only content is given, it
+will print the content.
+
+Collaborators:
+*Command
+*File
+*FileSystem
+*NotExistException

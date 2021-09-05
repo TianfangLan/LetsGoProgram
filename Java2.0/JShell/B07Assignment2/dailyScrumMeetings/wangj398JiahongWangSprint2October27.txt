@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+    - brainstormed about mkdir and cd command class
+	- brainstormed about ls and history command class
+What do I plan to work in the next three days?
+    - create mkdir and cd command class
+    - create ls and history command class
+
+Am I blocked on anything?
+    - Not this time

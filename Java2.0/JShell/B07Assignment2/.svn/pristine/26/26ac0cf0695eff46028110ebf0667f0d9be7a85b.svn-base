@@ -1,0 +1,92 @@
+package jshell.files;
+
+import java.util.ArrayList;
+
+/** The class File. The class will read the file and store the whole
+ *  file into the class in the form of list string. The class contains
+ *  a <code>path</code> to point which file will be open or operated. <br>
+ *  The class File is used to solve the write, append and get content
+ *  problems.
+ *
+ * @author tianfang Lan
+ */
+public class File {
+  /***path is the path for the file, store in the form of <code>path</code>*/
+  private Path path;
+  /***content will store String in a List, each element is a line of String*/
+  private ArrayList<String> content = new ArrayList<>();
+  /** File must contain a path and a String for content.
+   * 
+   * @param target is the path of the File
+   * @param file is the content in the File.
+   */
+  public File(Path target, String file){
+    path = target;
+    content = stringToList(file);
+  }
+
+  
+  /** 
+   * stringToList will trans a whole string into a list
+   * each element of the list is a line of the string
+   * 
+   * @param string input string
+   * @return the list of the input string
+   */
+  private ArrayList<String> stringToList(String string) {
+    // split the input string into array of string
+    String[] array = string.split("\n");
+    // al is the return arraylist
+    ArrayList<String> al = new ArrayList<String>();
+    for (String line :array) {
+      // add every line as an element into al
+      al.add(line);
+    }
+    return al;
+  }
+
+  /**
+   * listToString will trans a list back to a whole string.
+   * @param list is the list of the string
+   * @return the whole string back
+   */
+  private String listToString(ArrayList<String> list) {
+    String string = "";
+    string = list.toString();
+    return string;
+  }
+  
+  
+  /** 
+   * the getContent will return the content in the current File
+   * 
+   * @return the content of the file in the form of string.
+   */
+
+  public String getContent(){
+    return listToString(content);
+  }
+
+  
+  /** the getFilePath will return the path in the current File
+   * 
+   * @return the path of the file as a <code>path</code>.
+   */
+  public Path getFilePath(){
+    return path;
+  }
+
+  
+  /** writeContent will take in a String then overwrite the original content
+   * in the File
+   * @param newcontent
+   */
+  public void writeContent(String newcontent) {
+    // change the string into list, and overwrite the content
+    content = stringToList(newcontent);
+  }
+  
+  public void apped(String newstring) {
+    
+  }
+}

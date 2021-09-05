@@ -1,0 +1,7 @@
+Class name: Mapper
+
+Responsibilities:
+*Map the command typed by users and execute them
+
+Collaborators:
+*JShell

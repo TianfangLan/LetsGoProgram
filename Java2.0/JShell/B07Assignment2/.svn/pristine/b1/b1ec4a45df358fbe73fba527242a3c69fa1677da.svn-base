@@ -1,0 +1,18 @@
+package jshell.jshellcore;
+
+public class Input {
+    
+    private String inputContent;
+    
+    public Input() {
+    	
+    }
+  
+    public void SetInputContent(String content) {
+      this.inputContent = content;
+    }
+    
+    public String GetInputContent() {
+      return this.inputContent;
+    }
+}
